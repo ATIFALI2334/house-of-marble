@@ -4,13 +4,13 @@ import { useState } from "react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Naura Living" },
+      { title: "Contact — House of Marble" },
       {
         name: "description",
         content:
-          "Enquire about Naura Living stone furniture, basins and bespoke projects. Studio in Lahore, Pakistan.",
+          "Enquire about House of Marble stone furniture, basins and bespoke projects. Studio in Lahore, Pakistan.",
       },
-      { property: "og:title", content: "Contact — Naura Living" },
+      { property: "og:title", content: "Contact — House of Marble" },
       {
         property: "og:description",
         content: "Enquire about stone furniture, basins and bespoke projects.",
@@ -44,7 +44,7 @@ function Contact() {
           </div>
           <div>
             <dt className="eyebrow">Email</dt>
-            <dd className="mt-2 text-muted-foreground">hello@nauraliving.com</dd>
+            <dd className="mt-2 text-muted-foreground">hello@houseofmarble.com</dd>
           </div>
         </dl>
       </div>

@@ -5,13 +5,13 @@ import basins from "@/assets/basins.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Naura Living" },
+      { title: "About — House of Marble" },
       {
         name: "description",
         content:
-          "Naura Living is a stone atelier making marble and travertine furniture, basins and objects for contemporary interiors.",
+          "House of Marble is a stone atelier making marble and travertine furniture, basins and objects for contemporary interiors.",
       },
-      { property: "og:title", content: "About — Naura Living" },
+      { property: "og:title", content: "About — House of Marble" },
       {
         property: "og:description",
         content: "A stone atelier making marble and travertine pieces for contemporary interiors.",
@@ -36,7 +36,7 @@ function About() {
           A stone atelier for the quiet interior
         </h1>
         <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-          Naura Living began with a simple preference: rooms feel calmer when they hold real
+          House of Marble began with a simple preference: rooms feel calmer when they hold real
           material. We work with marble, travertine and solid wood to make basins, furniture
           and objects that carry weight — visually and literally.
         </p>
