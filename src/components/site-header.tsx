@@ -1,10 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram, Facebook } from "lucide-react";
+import { site } from "@/lib/site";
 
 const nav = [
   { to: "/", label: "Home" },
   { to: "/collections", label: "Collections" },
+  { to: "/projects", label: "Projects" },
+  { to: "/clients", label: "Clients & Reviews" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -15,7 +18,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40">
       <div className="bg-stone-deep px-4 py-2 text-center text-[0.65rem] tracking-[0.22em] text-primary-foreground uppercase">
-        For any queries please whatsapp us at +92 330 666 2872
+        For any queries please whatsapp us at {site.phone}
       </div>
 
       <div className="border-b border-border bg-background/90 backdrop-blur">
@@ -28,8 +31,8 @@ export function SiteHeader() {
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
 
-          <nav className="hidden gap-9 text-[0.7rem] tracking-[0.22em] uppercase md:flex">
-            {nav.slice(1).map((item) => (
+          <nav className="hidden gap-7 text-[0.65rem] tracking-[0.2em] uppercase md:flex">
+            {nav.slice(1, 5).map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
@@ -41,12 +44,24 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <Link to="/" className="font-display text-2xl tracking-[0.42em] md:text-3xl">
-            NAURA
+          <Link
+            to="/"
+            className="font-display text-xl leading-tight tracking-[0.3em] md:text-2xl"
+          >
+            HOUSE OF MARBLE
           </Link>
 
-          <div className="hidden text-[0.7rem] tracking-[0.22em] uppercase md:block">
-            <Link to="/contact" className="link-underline text-muted-foreground hover:text-foreground">
+          <div className="hidden items-center gap-4 md:flex">
+            <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
+              <Instagram className="size-4 text-muted-foreground hover:text-foreground" />
+            </a>
+            <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
+              <Facebook className="size-4 text-muted-foreground hover:text-foreground" />
+            </a>
+            <Link
+              to="/contact"
+              className="link-underline text-[0.65rem] tracking-[0.2em] text-muted-foreground uppercase hover:text-foreground"
+            >
               Enquire
             </Link>
           </div>
@@ -60,6 +75,14 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
+            <div className="flex gap-5 pt-2">
+              <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
+                <Instagram className="size-4" />
+              </a>
+              <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
+                <Facebook className="size-4" />
+              </a>
+            </div>
           </nav>
         )}
       </div>

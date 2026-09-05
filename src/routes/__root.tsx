@@ -80,12 +80,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Naura Living — Luxury Stone Interiors" },
+      { title: "House of Marble — Luxury Stone Interiors" },
       {
         name: "description",
         content: "Marble basins, furniture and décor objects for refined contemporary spaces.",
       },
-      { name: "author", content: "Naura Living" },
+      { name: "author", content: "House of Marble" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

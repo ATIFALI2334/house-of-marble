@@ -1,16 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { MessageCircle, Instagram, Facebook } from "lucide-react";
+import { site, whatsappLink } from "@/lib/site";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Naura Living" },
+      { title: "Contact — House of Marble" },
       {
         name: "description",
         content:
-          "Enquire about Naura Living stone furniture, basins and bespoke projects. Studio in Lahore, Pakistan.",
+          "Enquire about House of Marble stone furniture, basins and bespoke projects. Studio in Lahore, Pakistan.",
       },
-      { property: "og:title", content: "Contact — Naura Living" },
+      { property: "og:title", content: "Contact — House of Marble" },
       {
         property: "og:description",
         content: "Enquire about stone furniture, basins and bespoke projects.",
@@ -40,13 +42,30 @@ function Contact() {
           </div>
           <div>
             <dt className="eyebrow">WhatsApp</dt>
-            <dd className="mt-2 text-muted-foreground">+92 330 666 2872</dd>
+            <dd className="mt-2 text-muted-foreground">{site.phone}</dd>
           </div>
           <div>
             <dt className="eyebrow">Email</dt>
-            <dd className="mt-2 text-muted-foreground">hello@nauraliving.com</dd>
+            <dd className="mt-2 text-muted-foreground">hello@houseofmarble.com</dd>
           </div>
         </dl>
+
+        <div className="mt-10 flex flex-wrap items-center gap-4">
+          <a
+            href={whatsappLink("Hello House of Marble, I have an enquiry.")}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 border border-foreground bg-foreground px-7 py-3 text-[0.7rem] tracking-[0.24em] text-background uppercase transition-opacity hover:opacity-85"
+          >
+            <MessageCircle className="size-4" /> Chat on WhatsApp
+          </a>
+          <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
+            <Instagram className="size-5 text-muted-foreground hover:text-foreground" />
+          </a>
+          <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
+            <Facebook className="size-5 text-muted-foreground hover:text-foreground" />
+          </a>
+        </div>
       </div>
 
       <form
