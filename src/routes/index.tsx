@@ -1,18 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import hero from "@/assets/hero.jpg";
 import craft from "@/assets/craft.jpg";
-import { categories, pieces } from "@/data/catalogue";
+import { categories, pieces, reviews } from "@/data/catalogue";
+import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Naura Living — Luxury Stone Interiors" },
+      { title: "House of Marble — Luxury Stone Interiors" },
       {
         name: "description",
         content:
           "Curated marble basins, furniture and décor objects, hand-finished for refined contemporary interiors.",
       },
-      { property: "og:title", content: "Naura Living — Luxury Stone Interiors" },
+      { property: "og:title", content: "House of Marble — Luxury Stone Interiors" },
       {
         property: "og:description",
         content: "Curated marble basins, furniture and décor objects for refined spaces.",
@@ -35,7 +36,7 @@ function Home() {
         />
         <div className="absolute inset-0 flex items-end bg-gradient-to-t from-stone-deep/60 via-transparent to-transparent">
           <div className="mx-auto w-full max-w-7xl px-5 pb-14 md:px-10 md:pb-20">
-            <p className="eyebrow text-primary-foreground/80">Naura Living</p>
+            <p className="eyebrow text-primary-foreground/80">House of Marble</p>
             <h1 className="mt-3 max-w-2xl text-4xl leading-[1.1] text-primary-foreground md:text-6xl">
               Luxury Stone Interiors
             </h1>
@@ -60,40 +61,40 @@ function Home() {
         </div>
 
         <div className="mt-12 grid gap-8 md:grid-cols-3">
-          {categories.map((c) => (
-            <Link
-              key={c.title}
-              to="/collections"
-              className="group block"
-            >
-              <div className="overflow-hidden bg-secondary">
-                <img
-                  src={c.image}
-                  alt={c.title}
-                  loading="lazy"
-                  width={1200}
-                  height={1500}
-                  className="aspect-4/5 w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <h3 className="mt-5 text-xl">{c.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c.blurb}</p>
-            </Link>
+          {categories.map((c, i) => (
+            <Reveal key={c.title} delay={i * 100}>
+              <Link to="/collections" className="group block">
+                <div className="overflow-hidden bg-secondary">
+                  <img
+                    src={c.image}
+                    alt={c.title}
+                    loading="lazy"
+                    width={1200}
+                    height={1500}
+                    className="aspect-4/5 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <h3 className="mt-5 text-xl">{c.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c.blurb}</p>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </section>
 
       <section className="bg-secondary">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 md:grid-cols-2 md:px-10 md:py-28">
-          <img
-            src={craft}
-            alt="Stacked travertine and marble slabs in a stone workshop"
-            loading="lazy"
-            width={1600}
-            height={1100}
-            className="aspect-4/3 w-full object-cover"
-          />
-          <div>
+          <Reveal>
+            <img
+              src={craft}
+              alt="Stacked travertine and marble slabs in a stone workshop"
+              loading="lazy"
+              width={1600}
+              height={1100}
+              className="aspect-4/3 w-full object-cover"
+            />
+          </Reveal>
+          <Reveal delay={120}>
             <p className="eyebrow">The Material</p>
             <h2 className="mt-3 text-3xl md:text-4xl">Quarried, carved, finished by hand</h2>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
@@ -107,7 +108,7 @@ function Home() {
             >
               Our story
             </Link>
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -123,22 +124,52 @@ function Home() {
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4">
-          {pieces.slice(0, 4).map((p) => (
-            <article key={p.name}>
-              <div className="overflow-hidden bg-secondary">
-                <img
-                  src={p.image}
-                  alt={p.name}
-                  loading="lazy"
-                  width={1200}
-                  height={1500}
-                  className="aspect-4/5 w-full object-cover"
-                />
-              </div>
-              <h3 className="mt-4 text-base">{p.name}</h3>
-              <p className="text-xs tracking-wide text-muted-foreground">{p.material}</p>
-            </article>
+          {pieces.slice(0, 4).map((p, i) => (
+            <Reveal key={p.slug} delay={i * 80}>
+              <Link to="/collections/$slug" params={{ slug: p.slug }} className="group block">
+                <div className="overflow-hidden bg-secondary">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    loading="lazy"
+                    width={1200}
+                    height={1500}
+                    className="aspect-4/5 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <h3 className="mt-4 text-base">{p.name}</h3>
+                <p className="text-xs tracking-wide text-muted-foreground">{p.material}</p>
+              </Link>
+            </Reveal>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-secondary">
+        <div className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-24">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow">Reviews</p>
+              <h2 className="mt-3 text-3xl md:text-4xl">What our clients say</h2>
+            </div>
+            <Link to="/clients" className="link-underline text-[0.7rem] tracking-[0.24em] uppercase">
+              All reviews
+            </Link>
+          </div>
+          <div className="mt-10 grid gap-8 md:grid-cols-2">
+            {reviews.slice(0, 2).map((r, i) => (
+              <Reveal key={r.name} delay={i * 100}>
+                <figure className="h-full border border-border bg-background p-8">
+                  <blockquote className="font-display text-xl leading-relaxed">
+                    “{r.quote}”
+                  </blockquote>
+                  <figcaption className="mt-6 text-[0.65rem] tracking-[0.2em] text-muted-foreground uppercase">
+                    {r.name} — {r.role}
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
