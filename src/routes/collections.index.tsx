@@ -4,7 +4,7 @@ import { pieces } from "@/data/catalogue";
 
 const filters = ["All", "Furniture", "Basins", "Décor"] as const;
 
-export const Route = createFileRoute("/collections")({
+export const Route = createFileRoute("/collections/")({
   head: () => ({
     meta: [
       { title: "Collections — Naura Living" },
