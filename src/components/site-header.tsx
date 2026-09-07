@@ -55,9 +55,11 @@ export function SiteHeader() {
             <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
               <Instagram className="size-4 text-muted-foreground hover:text-foreground" />
             </a>
-            <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
+            {site.facebook && (
+  <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
               <Facebook className="size-4 text-muted-foreground hover:text-foreground" />
             </a>
+            )}
             <Link
               to="/contact"
               className="link-underline text-[0.65rem] tracking-[0.2em] text-muted-foreground uppercase hover:text-foreground"
@@ -79,9 +81,11 @@ export function SiteHeader() {
               <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
                 <Instagram className="size-4" />
               </a>
-              <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
+              {site.facebook && (
+  <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
                 <Facebook className="size-4" />
               </a>
+              )}
             </div>
           </nav>
         )}
