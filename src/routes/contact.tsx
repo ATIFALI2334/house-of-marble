@@ -10,7 +10,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Enquire about House of Marble stone furniture, basins and bespoke projects. Studio in Lahore, Pakistan.",
+          "Enquire about House of Marble stone furniture, basins and bespoke projects. Based in Pakistan.",
       },
       { property: "og:title", content: "Contact — House of Marble" },
       {
@@ -38,7 +38,7 @@ function Contact() {
         <dl className="mt-10 space-y-6 text-sm">
           <div>
             <dt className="eyebrow">Studio</dt>
-            <dd className="mt-2 text-muted-foreground">Lahore, Pakistan — by appointment</dd>
+            <dd className="mt-2 text-muted-foreground">{site.address}</dd>
           </div>
           <div>
             <dt className="eyebrow">WhatsApp</dt>
@@ -46,7 +46,7 @@ function Contact() {
           </div>
           <div>
             <dt className="eyebrow">Email</dt>
-            <dd className="mt-2 text-muted-foreground">hello@houseofmarble.com</dd>
+            <dd className="mt-2 text-muted-foreground">{site.email}</dd>
           </div>
         </dl>
 

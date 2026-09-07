@@ -1,11 +1,11 @@
 export const site = {
   name: "House of Marble",
-  phone: "+92 330 666 2872",
-  whatsapp: "923306662872",
+  phone: "0345 302 3550",
+  whatsapp: "923453023550",
   email: "hello@houseofmarble.com",
-  instagram: "https://instagram.com/houseofmarble",
-  facebook: "https://facebook.com/houseofmarble",
-  address: "Lahore, Pakistan — by appointment",
+  instagram: "https://www.instagram.com/house_ofmarble",
+  facebook: "",
+  address: "Pakistan — by appointment",
 };
 
 export function whatsappLink(message: string) {
