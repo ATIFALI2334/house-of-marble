@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroAsset from "@/assets/travertine-detail.jpg.asset.json";
 import craft from "@/assets/craft.jpg";
+import { whatsappLink } from "@/lib/site";
 import { categories, pieces, reviews } from "@/data/catalogue";
 import { Reveal } from "@/components/reveal";
 
