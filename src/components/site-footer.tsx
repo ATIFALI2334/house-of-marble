@@ -16,9 +16,11 @@ export function SiteFooter() {
             <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram">
               <Instagram className="size-5 hover:text-foreground" />
             </a>
-            <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
+            {site.facebook && (
+  <a href={site.facebook} target="_blank" rel="noreferrer" aria-label="Facebook">
               <Facebook className="size-5 hover:text-foreground" />
             </a>
+            )}
             <a
               href={whatsappLink("Hello House of Marble, I have an enquiry.")}
               target="_blank"

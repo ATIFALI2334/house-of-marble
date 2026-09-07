@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroAsset from "@/assets/travertine-detail.jpg.asset.json";
 import craft from "@/assets/craft.jpg";
+import { whatsappLink } from "@/lib/site";
 import { categories, pieces, reviews } from "@/data/catalogue";
 import { Reveal } from "@/components/reveal";
 
@@ -26,33 +27,49 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <div>
-      <section className="relative">
-        <img
-          src={heroAsset.url}
-          alt="Close-up of a travertine table edge"
-          width={1920}
-          height={1200}
-          className="h-[42vh] w-full object-cover md:h-[58vh]"
-        />
-        <div className="absolute inset-0 flex items-end bg-gradient-to-t from-stone-deep/60 via-transparent to-transparent">
-          <div className="animate-fade-in mx-auto w-full max-w-7xl px-5 pb-10 md:px-10 md:pb-16">
-            <p className="eyebrow text-primary-foreground/80">House of Marble</p>
-            <h1 className="mt-3 max-w-2xl text-4xl leading-[1.1] text-primary-foreground md:text-6xl">
+      <section className="mx-auto max-w-7xl px-5 pt-10 pb-4 md:px-10 md:pt-14">
+        <div className="animate-fade-in grid items-center gap-8 md:grid-cols-2 md:gap-14">
+          <div className="border border-border p-3 md:p-4">
+            <div className="overflow-hidden bg-secondary">
+              <img
+                src={heroAsset.url}
+                alt="Close-up of a travertine table edge"
+                width={1200}
+                height={1500}
+                className="aspect-4/5 w-full object-cover transition-transform duration-700 hover:scale-105"
+              />
+            </div>
+          </div>
+
+          <div>
+            <p className="eyebrow">House of Marble</p>
+            <h1 className="mt-3 text-4xl leading-[1.1] md:text-5xl">
               Luxury Stone Interiors
             </h1>
-            <p className="mt-4 max-w-md text-sm leading-relaxed text-primary-foreground/85">
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
               Curated marble basins, furniture and décor objects for refined contemporary
               spaces.
             </p>
-            <Link
-              to="/collections"
-              className="mt-8 inline-block border border-primary-foreground/70 px-8 py-3 text-[0.7rem] tracking-[0.24em] text-primary-foreground uppercase transition-colors hover:bg-primary-foreground hover:text-foreground"
-            >
-              View Collections
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                to="/collections"
+                className="inline-block border border-foreground bg-foreground px-8 py-3 text-[0.7rem] tracking-[0.24em] text-background uppercase"
+              >
+                View Collections
+              </Link>
+              <a
+                href={whatsappLink("Hello House of Marble, I would like to enquire about your stone pieces.")}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block border border-border px-8 py-3 text-[0.7rem] tracking-[0.24em] uppercase transition-colors hover:border-foreground"
+              >
+                Enquire on WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </section>
+
 
       <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
         <div className="max-w-xl">
