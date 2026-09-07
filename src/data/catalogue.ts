@@ -1,6 +1,11 @@
-import furniture from "@/assets/furniture.jpg";
-import basins from "@/assets/basins.jpg";
-import decor from "@/assets/decor.jpg";
+import travertineCubes from "@/assets/travertine-cubes.jpg.asset.json";
+import nestingTables from "@/assets/nesting-tables.jpg.asset.json";
+import nestingTablesAngle from "@/assets/nesting-tables-angle.jpg.asset.json";
+import travertineDetail from "@/assets/travertine-detail.jpg.asset.json";
+import rossoBasin from "@/assets/rosso-basin.jpg.asset.json";
+import rossoBathroom from "@/assets/rosso-bathroom.jpg.asset.json";
+import greenTray from "@/assets/green-tray.jpg.asset.json";
+import greenTrayDetail from "@/assets/green-tray-detail.jpg.asset.json";
 
 export type Piece = {
   slug: string;
@@ -21,17 +26,17 @@ export const categories = [
   {
     title: "Furniture",
     blurb: "Refined furniture defined by marble, travertine and solid wood.",
-    image: furniture,
+    image: nestingTablesAngle.url,
   },
   {
     title: "Basins",
     blurb: "Hand-carved stone basins for quiet, sculptural bathrooms.",
-    image: basins,
+    image: rossoBasin.url,
   },
   {
     title: "Décor",
     blurb: "Small objects that give a room its weight and stillness.",
-    image: decor,
+    image: greenTray.url,
   },
 ] as const;
 
@@ -41,7 +46,7 @@ export const pieces: Piece[] = [
     name: "Milo Coffee Table",
     material: "Cream travertine",
     category: "Furniture",
-    image: furniture,
+    image: travertineCubes.url,
     size: "120 × 70 × 34 cm",
     weight: "Approx. 145 kg",
     finish: "Honed, unfilled",
@@ -56,7 +61,7 @@ export const pieces: Piece[] = [
     name: "Marquino Console",
     material: "Nero marquina marble",
     category: "Furniture",
-    image: furniture,
+    image: nestingTables.url,
     size: "150 × 40 × 82 cm",
     weight: "Approx. 190 kg",
     finish: "Polished",
@@ -71,7 +76,7 @@ export const pieces: Piece[] = [
     name: "Muse Side Table",
     material: "Statuario marble",
     category: "Furniture",
-    image: furniture,
+    image: travertineDetail.url,
     size: "45 Ø × 52 cm",
     weight: "Approx. 48 kg",
     finish: "Polished",
@@ -86,7 +91,7 @@ export const pieces: Piece[] = [
     name: "Osso Bench",
     material: "Silver travertine",
     category: "Furniture",
-    image: furniture,
+    image: nestingTablesAngle.url,
     size: "160 × 38 × 42 cm",
     weight: "Approx. 165 kg",
     finish: "Brushed",
@@ -101,7 +106,7 @@ export const pieces: Piece[] = [
     name: "Carrara Vessel Basin",
     material: "Carrara marble",
     category: "Basins",
-    image: basins,
+    image: rossoBasin.url,
     size: "42 Ø × 15 cm, 40 mm waste",
     weight: "Approx. 32 kg",
     finish: "Honed",
@@ -116,7 +121,7 @@ export const pieces: Piece[] = [
     name: "Onda Carved Basin",
     material: "Botticino marble",
     category: "Basins",
-    image: basins,
+    image: rossoBathroom.url,
     size: "55 × 38 × 14 cm",
     weight: "Approx. 38 kg",
     finish: "Honed, fluted exterior",
@@ -131,7 +136,7 @@ export const pieces: Piece[] = [
     name: "Plinth Pedestal Basin",
     material: "Travertine",
     category: "Basins",
-    image: basins,
+    image: rossoBasin.url,
     size: "50 Ø × 90 cm high",
     weight: "Approx. 110 kg",
     finish: "Honed, filled",
@@ -146,7 +151,7 @@ export const pieces: Piece[] = [
     name: "Sasso Bowl",
     material: "Roman travertine",
     category: "Décor",
-    image: decor,
+    image: greenTray.url,
     size: "30 Ø × 9 cm",
     weight: "Approx. 6 kg",
     finish: "Honed",
@@ -161,7 +166,7 @@ export const pieces: Piece[] = [
     name: "Colonna Candle Holder",
     material: "Travertine",
     category: "Décor",
-    image: decor,
+    image: greenTrayDetail.url,
     size: "9 Ø × 18 cm",
     weight: "Approx. 2 kg",
     finish: "Honed",
@@ -176,7 +181,7 @@ export const pieces: Piece[] = [
     name: "Terra Incense Plate",
     material: "Beige marble",
     category: "Décor",
-    image: decor,
+    image: greenTray.url,
     size: "16 Ø × 2 cm",
     weight: "Approx. 1.2 kg",
     finish: "Honed",
@@ -193,28 +198,28 @@ export const projects = [
     location: "Lahore",
     scope: "Two bathrooms, kitchen island, entrance console",
     year: "2025",
-    image: basins,
+    image: rossoBathroom.url,
   },
   {
     title: "DHA Phase 6 Villa",
     location: "Lahore",
     scope: "Full stone package — floors, basins, fireplace surround",
     year: "2025",
-    image: furniture,
+    image: nestingTables.url,
   },
   {
     title: "Clifton Apartment",
     location: "Karachi",
     scope: "Travertine living room set and dining table",
     year: "2024",
-    image: decor,
+    image: greenTrayDetail.url,
   },
   {
     title: "Boutique Hotel Suites",
     location: "Islamabad",
     scope: "18 hand-carved vessel basins",
     year: "2024",
-    image: basins,
+    image: rossoBasin.url,
   },
 ];
 

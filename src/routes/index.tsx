@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import hero from "@/assets/hero.jpg";
+import heroAsset from "@/assets/travertine-detail.jpg.asset.json";
 import craft from "@/assets/craft.jpg";
 import { categories, pieces, reviews } from "@/data/catalogue";
 import { Reveal } from "@/components/reveal";
@@ -28,14 +28,14 @@ function Home() {
     <div>
       <section className="relative">
         <img
-          src={hero}
-          alt="Living room with a sculptural travertine coffee table"
+          src={heroAsset.url}
+          alt="Close-up of a travertine table edge"
           width={1920}
           height={1200}
-          className="h-[78vh] w-full object-cover"
+          className="h-[42vh] w-full object-cover md:h-[58vh]"
         />
         <div className="absolute inset-0 flex items-end bg-gradient-to-t from-stone-deep/60 via-transparent to-transparent">
-          <div className="mx-auto w-full max-w-7xl px-5 pb-14 md:px-10 md:pb-20">
+          <div className="animate-fade-in mx-auto w-full max-w-7xl px-5 pb-10 md:px-10 md:pb-16">
             <p className="eyebrow text-primary-foreground/80">House of Marble</p>
             <h1 className="mt-3 max-w-2xl text-4xl leading-[1.1] text-primary-foreground md:text-6xl">
               Luxury Stone Interiors
