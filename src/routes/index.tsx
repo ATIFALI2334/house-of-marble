@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroAsset from "@/assets/rosso-bathroom.jpg.asset.json";
+import heroAsset from "@/assets/travertine-detail.jpg.asset.json";
 import craft from "@/assets/craft.jpg";
 import { categories, pieces, reviews } from "@/data/catalogue";
 import { Reveal } from "@/components/reveal";
@@ -29,7 +29,7 @@ function Home() {
       <section className="relative">
         <img
           src={heroAsset.url}
-          alt="Rosso Levanto marble basins in a warm walnut bathroom"
+          alt="Close-up of a travertine table edge"
           width={1920}
           height={1200}
           className="h-[42vh] w-full object-cover md:h-[58vh]"
