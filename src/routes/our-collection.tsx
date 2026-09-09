@@ -82,6 +82,60 @@ const items = [
     note: "Thick-walled vessel basin with a matching stone waste.",
     image: greyRoundBasin.url,
   },
+  {
+    title: "Travertine Pedestal Side Table",
+    material: "Natural travertine with brass stem",
+    note: "Round travertine top on a slim brass stem and cylinder base.",
+    image: travertinePedestalSideTable.url,
+  },
+  {
+    title: "Onyx Cross Side Table",
+    material: "Banded onyx",
+    note: "Round top resting on two crossed onyx legs, carved from solid stone.",
+    image: onyxCrossSideTable.url,
+  },
+  {
+    title: "Travertine Nesting Tray Set",
+    material: "Natural travertine",
+    note: "Three stepped trays that nest together for vanity or console styling.",
+    image: travertineNestingTraySet.url,
+  },
+  {
+    title: "Marbled White Pillar Candle Holders",
+    material: "White and grey marble",
+    note: "Stacked cylinder and sphere pillars, sold as a pair.",
+    image: marbledWhitePillarCandles.url,
+  },
+  {
+    title: "Noir Pedestal Table",
+    material: "Nero marquina marble with brass stem",
+    note: "Round tray top on a brass stem and domed black marble base.",
+    image: noirPedestalTable.url,
+  },
+  {
+    title: "Noir Tray Table",
+    material: "Black marble",
+    note: "Rimmed round top on a squared black marble column.",
+    image: noirTrayTable.url,
+  },
+  {
+    title: "Noir Pillar Candle Holders",
+    material: "Black marble",
+    note: "Sculpted black pillars in two heights, sold as a pair.",
+    image: noirPillarCandles.url,
+  },
+  {
+    title: "Bianco Candle Holders",
+    material: "White marble with brass",
+    note: "Solid white marble bases with slim brass taper holders.",
+    image: whiteCandleHolders.url,
+  },
+  {
+    title: "Pietra Side Table",
+    material: "Light stone",
+    note: "Soft-edged side table for beside a chair or bed.",
+    image: pietraSideTable.url,
+  },
 ];
 
 export const Route = createFileRoute("/our-collection")({
