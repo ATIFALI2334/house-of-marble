@@ -141,13 +141,13 @@ const items = [
 export const Route = createFileRoute("/our-collection")({
   head: () => ({
     meta: [
-      { title: "Real Collection — House of Marble" },
+      { title: "Our Collection — House of Marble" },
       {
         name: "description",
         content:
           "Real photographs of House of Marble tables, basins, trays, tiles and slabs, straight from our workshop and installations.",
       },
-      { property: "og:title", content: "Real Collection — House of Marble" },
+      { property: "og:title", content: "Our Collection — House of Marble" },
       {
         property: "og:description",
         content: "Real photographs of our marble tables, basins, tiles and slabs.",
@@ -156,15 +156,15 @@ export const Route = createFileRoute("/our-collection")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: RealCollection,
+  component: OurCollection,
 });
 
-function RealCollection() {
+function OurCollection() {
   return (
     <div>
       <section className="mx-auto max-w-7xl px-5 pt-16 pb-10 md:px-10 md:pt-24">
         <p className="eyebrow">Photographed in Person</p>
-        <h1 className="mt-3 text-4xl md:text-5xl">Real Collection</h1>
+        <h1 className="mt-3 text-4xl md:text-5xl">Our Collection</h1>
         <p className="mt-5 max-w-2xl text-muted-foreground">
           Real pieces, real stone — photographed in our workshop, our yard and in
           our clients&apos; homes. Message us for sizes, finishes and availability.
