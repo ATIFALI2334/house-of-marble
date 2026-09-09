@@ -75,7 +75,7 @@ const items = [
   },
 ];
 
-export const Route = createFileRoute("/real-collection")({
+export const Route = createFileRoute("/our-collection")({
   head: () => ({
     meta: [
       { title: "Real Collection — House of Marble" },

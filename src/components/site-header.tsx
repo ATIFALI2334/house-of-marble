@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 const nav = [
   { to: "/", label: "Home" },
   { to: "/collections", label: "Collections" },
-  { to: "/real-collection", label: "Real Collection" },
+  { to: "/our-collection", label: "Our Collection" },
   { to: "/projects", label: "Projects" },
   { to: "/clients", label: "Clients & Reviews" },
   { to: "/about", label: "About" },
