@@ -16,6 +16,16 @@ import travertineRoughDetail from "@/assets/travertine-rough-detail.jpg.asset.js
 import onyxBasinDetail from "@/assets/onyx-basin-detail.jpg.asset.json";
 import beigeOvalBasin from "@/assets/beige-oval-basin.jpg.asset.json";
 import calacattaBasinDetail from "@/assets/calacatta-basin-detail.jpg.asset.json";
+import beigeCapsuleBasin from "@/assets/beige-capsule-basin.jpg.asset.json";
+import travertineWaveBasin from "@/assets/travertine-wave-basin.jpg.asset.json";
+import flutedCalacattaBasin from "@/assets/fluted-calacatta-basin.jpg.asset.json";
+import pietraSideTable from "@/assets/pietra-side-table.jpg.asset.json";
+import noirPedestalTable from "@/assets/noir-pedestal-table.jpg.asset.json";
+import onyxStoolTable from "@/assets/onyx-stool-table.jpg.asset.json";
+import travertineRoundCoffee from "@/assets/travertine-round-coffee.jpg.asset.json";
+import whiteCandleHolders from "@/assets/white-candle-holders.jpg.asset.json";
+import noirTrayTable from "@/assets/noir-tray-table.jpg.asset.json";
+import noirPillarCandles from "@/assets/noir-pillar-candles.jpg.asset.json";
 
 export type Piece = {
   slug: string;
@@ -380,6 +390,79 @@ export const projects = [
     scope: "18 hand-carved vessel basins",
     year: "2024",
     image: rossoBasin.url,
+  },
+];
+
+export const showcase = [
+  {
+    title: "Capsule Basin in Beige Marble",
+    material: "Beige marble",
+    detail: "58 × 36 × 13 cm — honed, matching stone waste cover",
+    note: "Set into a grey marble counter with brushed brass wall taps.",
+    image: beigeCapsuleBasin.url,
+  },
+  {
+    title: "Wave Vessel Basin",
+    material: "Classic travertine",
+    detail: "62 × 40 × 18 cm — hand-carved organic rim",
+    note: "A single block hollowed by hand, no two rims alike.",
+    image: travertineWaveBasin.url,
+  },
+  {
+    title: "Fluted Calacatta Basin",
+    material: "Calacatta marble",
+    detail: "55 × 40 × 14 cm — fluted exterior, honed bowl",
+    note: "Green and gold veining with a stone plug cut from the same slab.",
+    image: flutedCalacattaBasin.url,
+  },
+  {
+    title: "Arco Side Table",
+    material: "Brown pietra marble",
+    detail: "45 Ø × 52 cm — polished, arched leg",
+    note: "A round top on a three-plane base with a cut arch.",
+    image: pietraSideTable.url,
+  },
+  {
+    title: "Noir Pedestal Table",
+    material: "Nero marquina and brass",
+    detail: "40 Ø × 55 cm — polished, brass stem",
+    note: "Lipped tray top on a domed black marble base.",
+    image: noirPedestalTable.url,
+  },
+  {
+    title: "Onyx Shelf Stool",
+    material: "Honey onyx",
+    detail: "40 × 35 × 48 cm — honed, mitred edges",
+    note: "A stool or side table with one open shelf.",
+    image: onyxStoolTable.url,
+  },
+  {
+    title: "Luna Round Coffee Table",
+    material: "Travertine and walnut",
+    detail: "95 Ø × 38 cm — honed top, fluted base",
+    note: "A wide travertine disc over a ribbed walnut drum.",
+    image: travertineRoundCoffee.url,
+  },
+  {
+    title: "Bianco Candle Pair",
+    material: "Carrara marble and brass",
+    detail: "Heights 16 cm and 21 cm — polished",
+    note: "Turned marble bases with slim brass stems for dinner candles.",
+    image: whiteCandleHolders.url,
+  },
+  {
+    title: "Noir Tray Table",
+    material: "Nero marquina and blackened oak",
+    detail: "50 Ø × 52 cm — polished stone column",
+    note: "A dark oak tray top carried on a mitred marble plinth.",
+    image: noirTrayTable.url,
+  },
+  {
+    title: "Noir Pillar Holders",
+    material: "Black marble",
+    detail: "Heights 26 cm and 34 cm — polished",
+    note: "Stacked cylinder and sphere forms for pillar candles.",
+    image: noirPillarCandles.url,
   },
 ];
 

@@ -4,10 +4,12 @@ export function Reveal({
   children,
   delay = 0,
   className = "",
+  from = "up",
 }: {
   children: ReactNode;
   delay?: number;
   className?: string;
+  from?: "up" | "left" | "right";
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [shown, setShown] = useState(false);
@@ -34,12 +36,19 @@ export function Reveal({
     return () => io.disconnect();
   }, []);
 
+  const hidden =
+    from === "left"
+      ? "-translate-x-16 opacity-0 blur-[2px]"
+      : from === "right"
+        ? "translate-x-16 opacity-0 blur-[2px]"
+        : "translate-y-8 opacity-0 blur-[2px]";
+
   return (
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-[900ms] ease-out ${
-        shown ? "translate-y-0 opacity-100 blur-0" : "translate-y-8 opacity-0 blur-[2px]"
+      className={`transition-all duration-[1100ms] ease-out ${
+        shown ? "translate-x-0 translate-y-0 opacity-100 blur-0" : hidden
       } ${className}`}
     >
       {children}
