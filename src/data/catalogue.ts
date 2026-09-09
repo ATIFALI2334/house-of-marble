@@ -254,7 +254,7 @@ export const pieces: Piece[] = [
     size: "48 × 38 × 15 cm",
     weight: "Approx. 34 kg",
     finish: "Polished",
-    origin: "Quarried in Türkiye, carved in Lahore",
+    origin: "Quarried in Türkiye, carved in Karachi",
     lead: "5 weeks",
     description:
       "A deep burgundy oval with white veining running across the bowl, polished so the stone reads almost wet under light.",
@@ -269,7 +269,7 @@ export const pieces: Piece[] = [
     size: "45 Ø × 20 cm",
     weight: "Approx. 55 kg",
     finish: "Split face exterior, honed bowl",
-    origin: "Carved in Lahore",
+    origin: "Carved in Karachi",
     lead: "6 weeks",
     description:
       "The outside is left rough as it came off the block; the bowl is turned and honed smooth. Each one is different.",
@@ -299,7 +299,7 @@ export const pieces: Piece[] = [
     size: "60 × 40 × 16 cm",
     weight: "Approx. 42 kg",
     finish: "Polished",
-    origin: "Quarried in Italy, carved in Lahore",
+    origin: "Quarried in Italy, carved in Karachi",
     lead: "6 weeks",
     description:
       "A boat-shaped bowl in white marble shot through with grey, gold and green. No two blocks give the same pattern.",
@@ -314,7 +314,7 @@ export const pieces: Piece[] = [
     size: "32 Ø × 3 cm",
     weight: "Approx. 4 kg",
     finish: "Polished, raised lip",
-    origin: "Carved in Lahore",
+    origin: "Carved in Karachi",
     lead: "In stock",
     description:
       "A deep green tray with a turned lip — for perfume bottles, a coffee service, or the entrance table.",
@@ -344,7 +344,7 @@ export const pieces: Piece[] = [
     size: "45 Ø × 20 cm",
     weight: "Approx. 55 kg",
     finish: "Split face",
-    origin: "Carved in Lahore",
+    origin: "Carved in Karachi",
     lead: "6 weeks",
     description:
       "A close view of the hand-split rim — the record of the chisel is left exactly as it fell.",
@@ -359,7 +359,7 @@ export const pieces: Piece[] = [
     size: "40 Ø × 14 cm",
     weight: "Approx. 26 kg",
     finish: "High polish",
-    origin: "Quarried in Pakistan, carved in Lahore",
+    origin: "Quarried in Pakistan, carved in Karachi",
     lead: "5 weeks",
     description:
       "Translucent onyx with amber banding. Lit from below it glows; unlit it reads as soft cream.",
@@ -374,7 +374,7 @@ export const pieces: Piece[] = [
     size: "58 × 36 × 13 cm",
     weight: "Approx. 36 kg",
     finish: "Honed",
-    origin: "Carved in Lahore",
+    origin: "Carved in Karachi",
     lead: "4 weeks",
     description:
       "A soft-cornered capsule bowl with a matching stone waste cover, cut so the basin and plug read as one piece.",
@@ -406,7 +406,7 @@ export const projects = [
     image: rossoBathroom.url,
   },
   {
-    title: "DHA Phase 6 Villa",
+    title: "Karachi Villa",
     location: "Lahore",
     scope: "Full stone package — floors, basins, fireplace surround",
     year: "2025",
