@@ -26,6 +26,7 @@ export const Route = createFileRoute("/collections/")({
 
 function Collections() {
   const [active, setActive] = useState<(typeof filters)[number]>("All");
+  const [selected, setSelected] = useState<Piece | null>(null);
   const shown = active === "All" ? pieces : pieces.filter((p) => p.category === active);
 
   return (
