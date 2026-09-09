@@ -6,6 +6,7 @@ import { site } from "@/lib/site";
 const nav = [
   { to: "/", label: "Home" },
   { to: "/collections", label: "Collections" },
+  { to: "/real-collection", label: "Real Collection" },
   { to: "/projects", label: "Projects" },
   { to: "/clients", label: "Clients & Reviews" },
   { to: "/about", label: "About" },
@@ -32,7 +33,7 @@ export function SiteHeader() {
           </button>
 
           <nav className="hidden gap-7 text-[0.65rem] tracking-[0.2em] uppercase md:flex">
-            {nav.slice(1, 5).map((item) => (
+            {nav.slice(1, 6).map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
