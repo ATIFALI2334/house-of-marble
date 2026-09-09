@@ -26,6 +26,10 @@ import travertineRoundCoffee from "@/assets/travertine-round-coffee.jpg.asset.js
 import whiteCandleHolders from "@/assets/white-candle-holders.jpg.asset.json";
 import noirTrayTable from "@/assets/noir-tray-table.jpg.asset.json";
 import noirPillarCandles from "@/assets/noir-pillar-candles.jpg.asset.json";
+import rossoDeepBowlBasin from "@/assets/rosso-deep-bowl-basin.jpg.asset.json";
+import travertineSteppedNesting from "@/assets/travertine-stepped-nesting-tables.jpg.asset.json";
+import travertineNestingEdge from "@/assets/travertine-nesting-edge-detail.jpg.asset.json";
+import verdeTrayRim from "@/assets/verde-tray-rim-detail.jpg.asset.json";
 
 export type Piece = {
   slug: string;
