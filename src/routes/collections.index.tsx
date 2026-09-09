@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { pieces } from "@/data/catalogue";
+import { pieces, type Piece } from "@/data/catalogue";
+import { whatsappLink } from "@/lib/site";
+import { X, MessageCircle } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
 const filters = ["All", "Furniture", "Basins", "Décor"] as const;
