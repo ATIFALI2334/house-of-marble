@@ -284,7 +284,7 @@ export const pieces: Piece[] = [
     size: "Vanity 140 × 55 cm, basin 45 Ø",
     weight: "Approx. 120 kg",
     finish: "Split face stone, oiled walnut",
-    origin: "Made in Lahore",
+    origin: "Made in Karachi",
     lead: "8 weeks",
     description:
       "A floating walnut vanity built around the Roccia basin, with a single drawer and concealed plumbing.",
@@ -329,7 +329,7 @@ export const pieces: Piece[] = [
     size: "160 × 55 × 22 cm top",
     weight: "Approx. 210 kg",
     finish: "Honed",
-    origin: "Made in Lahore",
+    origin: "Made in Karachi",
     lead: "8 – 10 weeks",
     description:
       "A wall-hung vanity with a thick grey marble top over an oak drawer, set against full-height brown pietra panelling.",
@@ -400,14 +400,14 @@ export const pieces: Piece[] = [
 export const projects = [
   {
     title: "Gulberg Residence",
-    location: "Lahore",
+    location: "Karachi",
     scope: "Two bathrooms, kitchen island, entrance console",
     year: "2025",
     image: rossoBathroom.url,
   },
   {
     title: "Karachi Villa",
-    location: "Lahore",
+    location: "Karachi",
     scope: "Full stone package — floors, basins, fireplace surround",
     year: "2025",
     image: nestingTables.url,
@@ -504,7 +504,7 @@ export const showcase = [
 export const reviews = [
   {
     name: "Ayesha Tariq",
-    role: "Homeowner, Lahore",
+    role: "Homeowner, Karachi",
     quote:
       "The basins arrived flawless and the veining matched the slab photos exactly. Installation guidance was thorough.",
   },
