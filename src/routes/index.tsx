@@ -141,7 +141,7 @@ function Home() {
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4">
-          {pieces.slice(0, 4).map((p, i) => (
+          {pieces.slice(0, 8).map((p, i) => (
             <Reveal key={p.slug} delay={i * 80}>
               <Link to="/collections/$slug" params={{ slug: p.slug }} className="group block">
                 <div className="overflow-hidden bg-secondary">
