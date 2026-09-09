@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { projects } from "@/data/catalogue";
+import { projects, showcase } from "@/data/catalogue";
 import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/projects")({
@@ -55,6 +55,44 @@ function Projects() {
             </article>
           </Reveal>
         ))}
+      </div>
+
+      <div className="mt-28 overflow-hidden">
+        <p className="eyebrow">Recent Installations</p>
+        <h2 className="mt-3 text-3xl md:text-4xl">Pieces in place</h2>
+
+        <div className="mt-14 space-y-16 md:space-y-24">
+          {showcase.map((s, i) => {
+            const fromLeft = i % 2 === 0;
+            return (
+              <article key={s.title} className="grid items-center gap-8 md:grid-cols-2">
+                <Reveal
+                  from={fromLeft ? "left" : "right"}
+                  className={fromLeft ? "" : "md:order-2"}
+                >
+                  <div className="overflow-hidden bg-secondary">
+                    <img
+                      src={s.image}
+                      alt={`${s.title} in ${s.material}`}
+                      loading="lazy"
+                      width={1080}
+                      height={1350}
+                      className="aspect-4/5 w-full object-cover transition-transform duration-[1200ms] hover:scale-105"
+                    />
+                  </div>
+                </Reveal>
+                <Reveal from={fromLeft ? "right" : "left"} delay={120}>
+                  <p className="eyebrow">{s.material}</p>
+                  <h3 className="mt-3 font-[family-name:var(--font-display)] text-3xl font-light">
+                    {s.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{s.detail}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.note}</p>
+                </Reveal>
+              </article>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
