@@ -14,6 +14,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as ClientsRouteImport } from './routes/clients'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ProjectsRouteImport } from './routes/projects'
+import { Route as RealCollectionRouteImport } from './routes/real-collection'
 import { Route as CollectionsIndexRouteImport } from './routes/collections.index'
 import { Route as CollectionsSlugRouteImport } from './routes/collections.$slug'
 
@@ -42,6 +43,11 @@ const ProjectsRoute = ProjectsRouteImport.update({
   path: '/projects',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RealCollectionRoute = RealCollectionRouteImport.update({
+  id: '/real-collection',
+  path: '/real-collection',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CollectionsIndexRoute = CollectionsIndexRouteImport.update({
   id: '/collections/',
   path: '/collections/',
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/clients': typeof ClientsRoute
   '/contact': typeof ContactRoute
   '/projects': typeof ProjectsRoute
+  '/real-collection': typeof RealCollectionRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/collections/': typeof CollectionsIndexRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/clients': typeof ClientsRoute
   '/contact': typeof ContactRoute
   '/projects': typeof ProjectsRoute
+  '/real-collection': typeof RealCollectionRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/collections': typeof CollectionsIndexRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/clients': typeof ClientsRoute
   '/contact': typeof ContactRoute
   '/projects': typeof ProjectsRoute
+  '/real-collection': typeof RealCollectionRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/collections/': typeof CollectionsIndexRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/clients'
     | '/contact'
     | '/projects'
+    | '/real-collection'
     | '/collections/$slug'
     | '/collections/'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/clients'
     | '/contact'
     | '/projects'
+    | '/real-collection'
     | '/collections/$slug'
     | '/collections'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/clients'
     | '/contact'
     | '/projects'
+    | '/real-collection'
     | '/collections/$slug'
     | '/collections/'
   fileRoutesById: FileRoutesById
@@ -117,6 +129,7 @@ export interface RootRouteChildren {
   ClientsRoute: typeof ClientsRoute
   ContactRoute: typeof ContactRoute
   ProjectsRoute: typeof ProjectsRoute
+  RealCollectionRoute: typeof RealCollectionRoute
   CollectionsSlugRoute: typeof CollectionsSlugRoute
   CollectionsIndexRoute: typeof CollectionsIndexRoute
 }
@@ -158,6 +171,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/real-collection': {
+      id: '/real-collection'
+      path: '/real-collection'
+      fullPath: '/real-collection'
+      preLoaderRoute: typeof RealCollectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/collections/': {
       id: '/collections/'
       path: '/collections'
@@ -181,6 +201,7 @@ const rootRouteChildren: RootRouteChildren = {
   ClientsRoute: ClientsRoute,
   ContactRoute: ContactRoute,
   ProjectsRoute: ProjectsRoute,
+  RealCollectionRoute: RealCollectionRoute,
   CollectionsSlugRoute: CollectionsSlugRoute,
   CollectionsIndexRoute: CollectionsIndexRoute,
 }
