@@ -6,6 +6,16 @@ import rossoBasin from "@/assets/rosso-basin.jpg.asset.json";
 import rossoBathroom from "@/assets/rosso-bathroom.jpg.asset.json";
 import greenTray from "@/assets/green-tray.jpg.asset.json";
 import greenTrayDetail from "@/assets/green-tray-detail.jpg.asset.json";
+import rossoOvalBasin from "@/assets/rosso-oval-basin.jpg.asset.json";
+import travertineRoughBasin from "@/assets/travertine-rough-basin.jpg.asset.json";
+import travertineRoughBath from "@/assets/travertine-rough-bath.jpg.asset.json";
+import calacattaBoatBasin from "@/assets/calacatta-boat-basin.jpg.asset.json";
+import greenRoundTray from "@/assets/green-round-tray.jpg.asset.json";
+import brownMarbleVanity from "@/assets/brown-marble-vanity.jpg.asset.json";
+import travertineRoughDetail from "@/assets/travertine-rough-detail.jpg.asset.json";
+import onyxBasinDetail from "@/assets/onyx-basin-detail.jpg.asset.json";
+import beigeOvalBasin from "@/assets/beige-oval-basin.jpg.asset.json";
+import calacattaBasinDetail from "@/assets/calacatta-basin-detail.jpg.asset.json";
 
 export type Piece = {
   slug: string;
