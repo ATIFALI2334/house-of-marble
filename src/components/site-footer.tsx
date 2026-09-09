@@ -68,7 +68,9 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li>{site.address}</li>
             <li>{site.phone}</li>
+            <li>{site.phoneAlt}</li>
             <li>{site.email}</li>
+            <li>{site.emailAlt}</li>
             <li>Mon – Sat, 11am – 7pm</li>
           </ul>
         </div>

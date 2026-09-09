@@ -41,12 +41,30 @@ function Contact() {
             <dd className="mt-2 text-muted-foreground">{site.address}</dd>
           </div>
           <div>
-            <dt className="eyebrow">WhatsApp</dt>
-            <dd className="mt-2 text-muted-foreground">{site.phone}</dd>
+            <dt className="eyebrow">Phone / WhatsApp</dt>
+            <dd className="mt-2 text-muted-foreground">
+              <a href={`tel:+92${site.phone.replace(/\D/g, "").slice(1)}`} className="hover:text-foreground">
+                {site.phone}
+              </a>
+            </dd>
+            <dd className="mt-1 text-muted-foreground">
+              <a href={`tel:+92${site.phoneAlt.replace(/\D/g, "").slice(1)}`} className="hover:text-foreground">
+                {site.phoneAlt}
+              </a>
+            </dd>
           </div>
           <div>
             <dt className="eyebrow">Email</dt>
-            <dd className="mt-2 text-muted-foreground">{site.email}</dd>
+            <dd className="mt-2 text-muted-foreground">
+              <a href={`mailto:${site.email}`} className="hover:text-foreground">
+                {site.email}
+              </a>
+            </dd>
+            <dd className="mt-1 text-muted-foreground">
+              <a href={`mailto:${site.emailAlt}`} className="hover:text-foreground">
+                {site.emailAlt}
+              </a>
+            </dd>
           </div>
         </dl>
 
