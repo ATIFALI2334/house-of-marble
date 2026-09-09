@@ -130,12 +130,15 @@ function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
-        <div className="flex flex-wrap items-end justify-between gap-4">
+        <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
             <p className="eyebrow">Selected Pieces</p>
             <h2 className="mt-3 text-3xl md:text-4xl">New this season</h2>
           </div>
-          <Link to="/collections" className="link-underline text-[0.7rem] tracking-[0.24em] uppercase">
+          <Link
+            to="/collections"
+            className="inline-block self-center border border-border px-6 py-2.5 text-[0.65rem] tracking-[0.24em] text-muted-foreground uppercase transition-colors hover:border-foreground hover:text-foreground"
+          >
             See all
           </Link>
         </div>
@@ -164,12 +167,15 @@ function Home() {
 
       <section className="bg-secondary">
         <div className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-24">
-          <div className="flex flex-wrap items-end justify-between gap-4">
+          <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <p className="eyebrow">Reviews</p>
               <h2 className="mt-3 text-3xl md:text-4xl">What our clients say</h2>
             </div>
-            <Link to="/clients" className="link-underline text-[0.7rem] tracking-[0.24em] uppercase">
+            <Link
+              to="/clients"
+              className="inline-block self-center border border-border px-6 py-2.5 text-[0.65rem] tracking-[0.24em] text-muted-foreground uppercase transition-colors hover:border-foreground hover:text-foreground"
+            >
               All reviews
             </Link>
           </div>
