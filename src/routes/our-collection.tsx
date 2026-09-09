@@ -11,6 +11,15 @@ import blackGoldMarbleSlabs from "@/assets/black-gold-marble-slabs.jpg.asset.jso
 import rossoRoundTrayConsole from "@/assets/rosso-round-tray-console.jpg.asset.json";
 import rossoBlockCoffeeTable from "@/assets/rosso-block-coffee-table.jpg.asset.json";
 import greyRoundBasin from "@/assets/grey-round-basin.jpg.asset.json";
+import travertinePedestalSideTable from "@/assets/travertine-pedestal-side-table.jpg.asset.json";
+import onyxCrossSideTable from "@/assets/onyx-cross-side-table.jpg.asset.json";
+import travertineNestingTraySet from "@/assets/travertine-nesting-tray-set.jpg.asset.json";
+import marbledWhitePillarCandles from "@/assets/marbled-white-pillar-candles.jpg.asset.json";
+import noirPedestalTable from "@/assets/noir-pedestal-table.jpg.asset.json";
+import noirTrayTable from "@/assets/noir-tray-table.jpg.asset.json";
+import noirPillarCandles from "@/assets/noir-pillar-candles.jpg.asset.json";
+import whiteCandleHolders from "@/assets/white-candle-holders.jpg.asset.json";
+import pietraSideTable from "@/assets/pietra-side-table.jpg.asset.json";
 
 const items = [
   {
