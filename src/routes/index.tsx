@@ -157,7 +157,7 @@ function Home() {
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4">
-          {pieces.slice(0, 8).map((p, i) => (
+          {pieces.slice(0, 12).map((p, i) => (
             <Reveal key={p.slug} delay={i * 80}>
               <Link to="/collections/$slug" params={{ slug: p.slug }} className="group block">
                 <div className="overflow-hidden bg-secondary">
@@ -173,6 +173,58 @@ function Home() {
                 <h3 className="mt-4 text-base">{p.name}</h3>
                 <p className="text-xs tracking-wide text-muted-foreground">{p.material}</p>
               </Link>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-secondary">
+        <div className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
+          <div className="max-w-xl">
+            <p className="eyebrow">Gallery</p>
+            <h2 className="mt-3 text-3xl md:text-4xl">In the light of the room</h2>
+          </div>
+          <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3">
+            {gallery.map((g, i) => (
+              <Reveal key={g.title} delay={i * 80} from={i % 2 === 0 ? "left" : "right"}>
+                <div className="overflow-hidden bg-background">
+                  <img
+                    src={g.image}
+                    alt={g.title}
+                    loading="lazy"
+                    width={1200}
+                    height={1500}
+                    className="aspect-4/5 w-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                </div>
+                <h3 className="mt-4 text-base">{g.title}</h3>
+                <p className="text-xs tracking-wide text-muted-foreground">{g.material}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
+        <div className="max-w-xl">
+          <p className="eyebrow">Pieces in place</p>
+          <h2 className="mt-3 text-3xl md:text-4xl">Installed work</h2>
+        </div>
+        <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3">
+          {showcase.slice(0, 6).map((s, i) => (
+            <Reveal key={s.title} delay={i * 80}>
+              <div className="overflow-hidden bg-secondary">
+                <img
+                  src={s.image}
+                  alt={s.title}
+                  loading="lazy"
+                  width={1200}
+                  height={1500}
+                  className="aspect-4/5 w-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+              </div>
+              <h3 className="mt-4 text-base">{s.title}</h3>
+              <p className="text-xs tracking-wide text-muted-foreground">{s.material}</p>
             </Reveal>
           ))}
         </div>
