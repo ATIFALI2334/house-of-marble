@@ -2,8 +2,23 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroAsset from "@/assets/travertine-detail.jpg.asset.json";
 import craft from "@/assets/craft.jpg";
 import { whatsappLink } from "@/lib/site";
-import { categories, pieces, reviews } from "@/data/catalogue";
+import { categories, pieces, reviews, showcase } from "@/data/catalogue";
 import { Reveal } from "@/components/reveal";
+import waveVessel from "@/assets/travertine-wave-vessel-grey.jpg.asset.json";
+import flutedPlinth from "@/assets/fluted-marble-basin-plinth.jpg.asset.json";
+import hmBlackGoldTable from "@/assets/hm-black-gold-table.jpg.asset.json";
+import hmPremiumSlabs from "@/assets/hm-premium-slabs.jpg.asset.json";
+import noirPillars from "@/assets/noir-pillar-candles.jpg.asset.json";
+import whitePillars from "@/assets/marbled-white-pillar-candles.jpg.asset.json";
+
+const gallery = [
+  { image: waveVessel.url, title: "Wave Vessel Basin", material: "Classic travertine" },
+  { image: flutedPlinth.url, title: "Fluted Calacatta Basin", material: "Calacatta marble" },
+  { image: hmBlackGoldTable.url, title: "Noir & Gold Side Table", material: "Black gold marble" },
+  { image: hmPremiumSlabs.url, title: "Premium Slab Selection", material: "Black gold marble" },
+  { image: noirPillars.url, title: "Noir Pillar Holders", material: "Black marble" },
+  { image: whitePillars.url, title: "Bianco Pillar Holders", material: "Marbled white stone" },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
