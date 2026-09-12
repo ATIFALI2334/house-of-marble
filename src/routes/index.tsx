@@ -29,16 +29,14 @@ function Home() {
     <div>
       <section className="mx-auto max-w-7xl px-5 pt-10 pb-4 md:px-10 md:pt-14">
         <div className="animate-fade-in grid items-center gap-8 md:grid-cols-2 md:gap-14">
-          <div className="border border-border p-3 md:p-4">
-            <div className="overflow-hidden bg-secondary">
-              <img
-                src={heroAsset.url}
-                alt="Close-up of a travertine table edge"
-                width={1200}
-                height={1500}
-                className="aspect-4/5 w-full object-cover transition-transform duration-700 hover:scale-105"
-              />
-            </div>
+          <div className="overflow-hidden bg-secondary">
+            <img
+              src={heroAsset.url}
+              alt="Close-up of a travertine table edge"
+              width={1200}
+              height={1500}
+              className="aspect-4/5 w-full object-cover transition-transform duration-700 hover:scale-105"
+            />
           </div>
 
           <div>

@@ -7,7 +7,8 @@ export const site = {
   emailAlt: "Houseofmarble92@gmail.com",
   instagram: "https://www.instagram.com/house_ofmarble",
   facebook: "",
-  address: "Pakistan — by appointment",
+  address:
+    "Plot # VE-226, St-01, Sec-16, Aman Chowk, Khairabad, Orangi Town, Karachi",
 };
 
 export function whatsappLink(message: string) {
