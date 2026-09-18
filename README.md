@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# Natural Living Showcase
+
+http://www.nauraliving.com/ I want this type off website no shop oki just look like the website sturacture oki i wnat this type of website structure see the wesbite and build it
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://house-of-marble.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/2f61c85d-d308-4278-8e64-5db73449bdcd).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
