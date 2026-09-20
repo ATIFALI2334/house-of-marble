@@ -199,6 +199,33 @@ function Home() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-7xl px-5 pb-20 md:px-10 md:pb-28">
+        <div className="max-w-xl">
+          <p className="eyebrow">Objects</p>
+          <h2 className="mt-3 text-3xl md:text-4xl">Small stone for everyday use</h2>
+        </div>
+        <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-3">
+          {objects.map((o, i) => (
+            <Reveal key={o.slug} delay={i * 80} from={i % 2 === 0 ? "left" : "right"}>
+              <Link to="/collections/$slug" params={{ slug: o.slug }} className="group block">
+                <div className="overflow-hidden bg-secondary">
+                  <img
+                    src={o.image}
+                    alt={o.title}
+                    loading="lazy"
+                    width={1200}
+                    height={1500}
+                    className="aspect-4/5 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <h3 className="mt-4 text-base">{o.title}</h3>
+                <p className="text-xs tracking-wide text-muted-foreground">{o.material}</p>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
       <section className="bg-secondary">
         <div className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-28">
           <div className="max-w-xl">
