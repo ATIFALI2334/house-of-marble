@@ -30,6 +30,15 @@ import rossoDeepBowlBasin from "@/assets/rosso-deep-bowl-basin.jpg.asset.json";
 import travertineSteppedNesting from "@/assets/travertine-stepped-nesting-tables.jpg.asset.json";
 import travertineNestingEdge from "@/assets/travertine-nesting-edge-detail.jpg.asset.json";
 import verdeTrayRim from "@/assets/verde-tray-rim-detail.jpg.asset.json";
+import travertineSquareTray from "@/assets/travertine-square-vanity-tray.jpg.asset.json";
+import noirCandleTray from "@/assets/noir-marble-candle-tray.jpg.asset.json";
+import marbleArchClocks from "@/assets/marble-arch-clocks.jpg.asset.json";
+import onyxCandleVessel from "@/assets/onyx-candle-vessel.jpg.asset.json";
+import verdeTrinketBowl from "@/assets/verde-trinket-bowl.jpg.asset.json";
+import rossoSoapDish from "@/assets/rosso-soap-dish.jpg.asset.json";
+import onyxGreenTray from "@/assets/onyx-green-round-tray.jpg.asset.json";
+import marbleRingDishes from "@/assets/marble-ring-dishes-pair.jpg.asset.json";
+import blueOnyxTray from "@/assets/blue-onyx-round-tray.jpg.asset.json";
 
 export type Piece = {
   slug: string;
