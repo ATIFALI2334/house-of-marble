@@ -10,6 +10,27 @@ import hmBlackGoldTable from "@/assets/hm-black-gold-table.jpg.asset.json";
 import hmPremiumSlabs from "@/assets/hm-premium-slabs.jpg.asset.json";
 import noirPillars from "@/assets/noir-pillar-candles.jpg.asset.json";
 import whitePillars from "@/assets/marbled-white-pillar-candles.jpg.asset.json";
+import travertineSquareTray from "@/assets/travertine-square-vanity-tray.jpg.asset.json";
+import noirCandleTray from "@/assets/noir-marble-candle-tray.jpg.asset.json";
+import marbleArchClocks from "@/assets/marble-arch-clocks.jpg.asset.json";
+import onyxCandleVessel from "@/assets/onyx-candle-vessel.jpg.asset.json";
+import verdeTrinketBowl from "@/assets/verde-trinket-bowl.jpg.asset.json";
+import rossoSoapDish from "@/assets/rosso-soap-dish.jpg.asset.json";
+import onyxGreenTray from "@/assets/onyx-green-round-tray.jpg.asset.json";
+import marbleRingDishes from "@/assets/marble-ring-dishes-pair.jpg.asset.json";
+import blueOnyxTray from "@/assets/blue-onyx-round-tray.jpg.asset.json";
+
+const objects = [
+  { slug: "travertine-square-vanity-tray", image: travertineSquareTray.url, title: "Travertine Square Vanity Tray", material: "Classic travertine" },
+  { slug: "blue-onyx-round-tray", image: blueOnyxTray.url, title: "Blue Onyx Round Tray", material: "Blue onyx" },
+  { slug: "onyx-candle-vessel", image: onyxCandleVessel.url, title: "Onyx Candle Vessel", material: "Honey onyx" },
+  { slug: "marble-arch-clock", image: marbleArchClocks.url, title: "Marble Arch Desk Clock", material: "Carrara & Emperador" },
+  { slug: "noir-marble-candle-tray", image: noirCandleTray.url, title: "Noir Marble Candle Tray", material: "Black marble" },
+  { slug: "verde-trinket-bowl", image: verdeTrinketBowl.url, title: "Verde Trinket Bowl", material: "Green marble" },
+  { slug: "rosso-soap-dish", image: rossoSoapDish.url, title: "Rosso Soap Dish", material: "Rosso Levanto marble" },
+  { slug: "onyx-green-round-tray", image: onyxGreenTray.url, title: "Onyx Green Round Tray", material: "Green onyx" },
+  { slug: "marble-ring-dishes", image: marbleRingDishes.url, title: "Marble Ring Dishes", material: "Mixed onyx & marble" },
+];
 
 const gallery = [
   { image: waveVessel.url, title: "Wave Vessel Basin", material: "Classic travertine" },
@@ -172,6 +193,33 @@ function Home() {
                 </div>
                 <h3 className="mt-4 text-base">{p.name}</h3>
                 <p className="text-xs tracking-wide text-muted-foreground">{p.material}</p>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 pb-20 md:px-10 md:pb-28">
+        <div className="max-w-xl">
+          <p className="eyebrow">Objects</p>
+          <h2 className="mt-3 text-3xl md:text-4xl">Small stone for everyday use</h2>
+        </div>
+        <div className="mt-12 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-3">
+          {objects.map((o, i) => (
+            <Reveal key={o.slug} delay={i * 80} from={i % 2 === 0 ? "left" : "right"}>
+              <Link to="/collections/$slug" params={{ slug: o.slug }} className="group block">
+                <div className="overflow-hidden bg-secondary">
+                  <img
+                    src={o.image}
+                    alt={o.title}
+                    loading="lazy"
+                    width={1200}
+                    height={1500}
+                    className="aspect-4/5 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <h3 className="mt-4 text-base">{o.title}</h3>
+                <p className="text-xs tracking-wide text-muted-foreground">{o.material}</p>
               </Link>
             </Reveal>
           ))}

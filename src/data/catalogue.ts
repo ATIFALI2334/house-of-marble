@@ -30,6 +30,15 @@ import rossoDeepBowlBasin from "@/assets/rosso-deep-bowl-basin.jpg.asset.json";
 import travertineSteppedNesting from "@/assets/travertine-stepped-nesting-tables.jpg.asset.json";
 import travertineNestingEdge from "@/assets/travertine-nesting-edge-detail.jpg.asset.json";
 import verdeTrayRim from "@/assets/verde-tray-rim-detail.jpg.asset.json";
+import travertineSquareTray from "@/assets/travertine-square-vanity-tray.jpg.asset.json";
+import noirCandleTray from "@/assets/noir-marble-candle-tray.jpg.asset.json";
+import marbleArchClocks from "@/assets/marble-arch-clocks.jpg.asset.json";
+import onyxCandleVessel from "@/assets/onyx-candle-vessel.jpg.asset.json";
+import verdeTrinketBowl from "@/assets/verde-trinket-bowl.jpg.asset.json";
+import rossoSoapDish from "@/assets/rosso-soap-dish.jpg.asset.json";
+import onyxGreenTray from "@/assets/onyx-green-round-tray.jpg.asset.json";
+import marbleRingDishes from "@/assets/marble-ring-dishes-pair.jpg.asset.json";
+import blueOnyxTray from "@/assets/blue-onyx-round-tray.jpg.asset.json";
 
 export type Piece = {
   slug: string;
@@ -394,6 +403,141 @@ export const pieces: Piece[] = [
     description:
       "A hand sample of the Calacatta Viola we cut basins from, so you can see the veining before you commit.",
     care: "Keep dry; sample stone is unsealed.",
+  },
+  {
+    slug: "travertine-square-vanity-tray",
+    name: "Travertine Square Vanity Tray",
+    material: "Classic travertine",
+    category: "Décor",
+    image: travertineSquareTray.url,
+    size: "25 × 25 × 3 cm",
+    weight: "Approx. 2.6 kg",
+    finish: "Honed top, chiselled edge",
+    origin: "Carved in Karachi",
+    lead: "In stock",
+    description:
+      "A square travertine tray with a hand-chiselled raw edge and a recessed round well for perfume, rings and daily jewellery.",
+    care: "Wipe with a soft dry cloth; avoid perfume spills sitting on the surface.",
+  },
+  {
+    slug: "noir-marble-candle-tray",
+    name: "Noir Marble Candle Tray",
+    material: "Black marble",
+    category: "Décor",
+    image: noirCandleTray.url,
+    size: "16 cm diameter × 3 cm",
+    weight: "Approx. 1.4 kg",
+    finish: "Polished",
+    origin: "Carved in Karachi",
+    lead: "In stock",
+    description:
+      "A low, round dish turned from a single block of black marble — made for a pillar candle on a bedside table.",
+    care: "Clean with a damp cloth; remove wax when cool.",
+  },
+  {
+    slug: "marble-arch-clock",
+    name: "Marble Arch Desk Clock",
+    material: "Carrara, Bianco and Emperador marble",
+    category: "Décor",
+    image: marbleArchClocks.url,
+    size: "14 × 12 × 4 cm",
+    weight: "Approx. 1.8 kg",
+    finish: "Polished",
+    origin: "Carved in Karachi",
+    lead: "2 weeks",
+    description:
+      "An arched desk clock cut from solid stone with brass hands. Available in white, veined grey and deep brown marble.",
+    care: "Dust with a dry cloth; replace the battery from the rear housing.",
+  },
+  {
+    slug: "onyx-candle-vessel",
+    name: "Onyx Candle Vessel",
+    material: "Honey onyx",
+    category: "Décor",
+    image: onyxCandleVessel.url,
+    size: "10 cm diameter × 10 cm",
+    weight: "Approx. 1.5 kg",
+    finish: "Polished",
+    origin: "Quarried in Pakistan",
+    lead: "In stock",
+    description:
+      "A hollowed onyx vessel that warms and glows once the candle is lit, with cream and caramel banding on every side.",
+    care: "Onyx is soft — neutral soap only, never abrasive pads.",
+  },
+  {
+    slug: "verde-trinket-bowl",
+    name: "Verde Trinket Bowl",
+    material: "Green marble",
+    category: "Décor",
+    image: verdeTrinketBowl.url,
+    size: "14 cm diameter × 4 cm",
+    weight: "Approx. 1.2 kg",
+    finish: "Polished",
+    origin: "Carved in Karachi",
+    lead: "In stock",
+    description:
+      "A shallow green marble bowl for keys, coins and small jewellery at the entrance of a home.",
+    care: "Wipe clean; avoid harsh cleaners.",
+  },
+  {
+    slug: "rosso-soap-dish",
+    name: "Rosso Soap Dish",
+    material: "Rosso Levanto marble",
+    category: "Décor",
+    image: rossoSoapDish.url,
+    size: "12 cm diameter × 3 cm",
+    weight: "Approx. 0.9 kg",
+    finish: "Polished",
+    origin: "Carved in Karachi",
+    lead: "In stock",
+    description:
+      "A deep red soap dish with gold veining and a recessed well, cut to sit beside a basin.",
+    care: "Rinse and dry after use to avoid soap film.",
+  },
+  {
+    slug: "onyx-green-round-tray",
+    name: "Onyx Green Round Tray",
+    material: "Green onyx",
+    category: "Décor",
+    image: onyxGreenTray.url,
+    size: "18 cm diameter × 4 cm",
+    weight: "Approx. 1.7 kg",
+    finish: "Polished",
+    origin: "Quarried in Pakistan",
+    lead: "In stock",
+    description:
+      "Soft green onyx with rust-toned veining, turned into a round catch-all tray for a dresser or desk.",
+    care: "Neutral soap only; keep away from acidic liquids.",
+  },
+  {
+    slug: "marble-ring-dishes",
+    name: "Marble Ring Dishes (Pair)",
+    material: "Mixed onyx and marble",
+    category: "Décor",
+    image: marbleRingDishes.url,
+    size: "11 cm diameter × 3 cm each",
+    weight: "Approx. 0.7 kg each",
+    finish: "Polished",
+    origin: "Carved in Karachi",
+    lead: "In stock",
+    description:
+      "A pair of rounded ring dishes — one in olive-toned onyx, one in white marble with plum veining. No two are alike.",
+    care: "Wipe with a soft dry cloth.",
+  },
+  {
+    slug: "blue-onyx-round-tray",
+    name: "Blue Onyx Round Tray",
+    material: "Blue onyx",
+    category: "Décor",
+    image: blueOnyxTray.url,
+    size: "25 cm diameter × 3 cm",
+    weight: "Approx. 2.4 kg",
+    finish: "Polished",
+    origin: "Quarried in Pakistan",
+    lead: "2 weeks",
+    description:
+      "Pale blue onyx crossed with amber veining, cut into a wide serving and display tray with a raised rim.",
+    care: "Onyx is soft — lift rather than slide objects across the surface.",
   },
 ];
 
