@@ -1,44 +1,44 @@
-import travertineCubes from "@/assets/travertine-cubes.jpg.asset.json";
-import nestingTables from "@/assets/nesting-tables.jpg.asset.json";
-import nestingTablesAngle from "@/assets/nesting-tables-angle.jpg.asset.json";
-import travertineDetail from "@/assets/travertine-detail.jpg.asset.json";
-import rossoBasin from "@/assets/rosso-basin.jpg.asset.json";
-import rossoBathroom from "@/assets/rosso-bathroom.jpg.asset.json";
-import greenTray from "@/assets/green-tray.jpg.asset.json";
-import greenTrayDetail from "@/assets/green-tray-detail.jpg.asset.json";
-import rossoOvalBasin from "@/assets/rosso-oval-basin.jpg.asset.json";
-import travertineRoughBasin from "@/assets/travertine-rough-basin.jpg.asset.json";
-import travertineRoughBath from "@/assets/travertine-rough-bath.jpg.asset.json";
-import calacattaBoatBasin from "@/assets/calacatta-boat-basin.jpg.asset.json";
-import greenRoundTray from "@/assets/green-round-tray.jpg.asset.json";
-import brownMarbleVanity from "@/assets/brown-marble-vanity.jpg.asset.json";
-import travertineRoughDetail from "@/assets/travertine-rough-detail.jpg.asset.json";
-import onyxBasinDetail from "@/assets/onyx-basin-detail.jpg.asset.json";
-import beigeOvalBasin from "@/assets/beige-oval-basin.jpg.asset.json";
-import calacattaBasinDetail from "@/assets/calacatta-basin-detail.jpg.asset.json";
-import beigeCapsuleBasin from "@/assets/beige-capsule-basin.jpg.asset.json";
-import travertineWaveBasin from "@/assets/travertine-wave-basin.jpg.asset.json";
-import flutedCalacattaBasin from "@/assets/fluted-calacatta-basin.jpg.asset.json";
-import pietraSideTable from "@/assets/pietra-side-table.jpg.asset.json";
-import noirPedestalTable from "@/assets/noir-pedestal-table.jpg.asset.json";
-import onyxStoolTable from "@/assets/onyx-stool-table.jpg.asset.json";
-import travertineRoundCoffee from "@/assets/travertine-round-coffee.jpg.asset.json";
-import whiteCandleHolders from "@/assets/white-candle-holders.jpg.asset.json";
-import noirTrayTable from "@/assets/noir-tray-table.jpg.asset.json";
-import noirPillarCandles from "@/assets/noir-pillar-candles.jpg.asset.json";
-import rossoDeepBowlBasin from "@/assets/rosso-deep-bowl-basin.jpg.asset.json";
-import travertineSteppedNesting from "@/assets/travertine-stepped-nesting-tables.jpg.asset.json";
-import travertineNestingEdge from "@/assets/travertine-nesting-edge-detail.jpg.asset.json";
-import verdeTrayRim from "@/assets/verde-tray-rim-detail.jpg.asset.json";
-import travertineSquareTray from "@/assets/travertine-square-vanity-tray.jpg.asset.json";
-import noirCandleTray from "@/assets/noir-marble-candle-tray.jpg.asset.json";
-import marbleArchClocks from "@/assets/marble-arch-clocks.jpg.asset.json";
-import onyxCandleVessel from "@/assets/onyx-candle-vessel.jpg.asset.json";
-import verdeTrinketBowl from "@/assets/verde-trinket-bowl.jpg.asset.json";
-import rossoSoapDish from "@/assets/rosso-soap-dish.jpg.asset.json";
-import onyxGreenTray from "@/assets/onyx-green-round-tray.jpg.asset.json";
-import marbleRingDishes from "@/assets/marble-ring-dishes-pair.jpg.asset.json";
-import blueOnyxTray from "@/assets/blue-onyx-round-tray.jpg.asset.json";
+import travertineCubes from "@/assets/travertine-cubes.jpg";
+import nestingTables from "@/assets/nesting-tables.jpg";
+import nestingTablesAngle from "@/assets/nesting-tables-angle.jpg";
+import travertineDetail from "@/assets/travertine-detail.jpg";
+import rossoBasin from "@/assets/rosso-basin.jpg";
+import rossoBathroom from "@/assets/rosso-bathroom.jpg";
+import greenTray from "@/assets/green-tray.jpg";
+import greenTrayDetail from "@/assets/green-tray-detail.jpg";
+import rossoOvalBasin from "@/assets/rosso-oval-basin.jpg";
+import travertineRoughBasin from "@/assets/travertine-rough-basin.jpg";
+import travertineRoughBath from "@/assets/travertine-rough-bath.jpg";
+import calacattaBoatBasin from "@/assets/calacatta-boat-basin.jpg";
+import greenRoundTray from "@/assets/green-round-tray.jpg";
+import brownMarbleVanity from "@/assets/brown-marble-vanity.jpg";
+import travertineRoughDetail from "@/assets/travertine-rough-detail.jpg";
+import onyxBasinDetail from "@/assets/onyx-basin-detail.jpg";
+import beigeOvalBasin from "@/assets/beige-oval-basin.jpg";
+import calacattaBasinDetail from "@/assets/calacatta-basin-detail.jpg";
+import beigeCapsuleBasin from "@/assets/beige-capsule-basin.jpg";
+import travertineWaveBasin from "@/assets/travertine-wave-basin.jpg";
+import flutedCalacattaBasin from "@/assets/fluted-calacatta-basin.jpg";
+import pietraSideTable from "@/assets/pietra-side-table.jpg";
+import noirPedestalTable from "@/assets/noir-pedestal-table.jpg";
+import onyxStoolTable from "@/assets/onyx-stool-table.jpg";
+import travertineRoundCoffee from "@/assets/travertine-round-coffee.jpg";
+import whiteCandleHolders from "@/assets/white-candle-holders.jpg";
+import noirTrayTable from "@/assets/noir-tray-table.jpg";
+import noirPillarCandles from "@/assets/noir-pillar-candles.jpg";
+import rossoDeepBowlBasin from "@/assets/rosso-deep-bowl-basin.jpg";
+import travertineSteppedNesting from "@/assets/travertine-stepped-nesting-tables.jpg";
+import travertineNestingEdge from "@/assets/travertine-nesting-edge-detail.jpg";
+import verdeTrayRim from "@/assets/verde-tray-rim-detail.jpg";
+import travertineSquareTray from "@/assets/travertine-square-vanity-tray.jpg";
+import noirCandleTray from "@/assets/noir-marble-candle-tray.jpg";
+import marbleArchClocks from "@/assets/marble-arch-clocks.jpg";
+import onyxCandleVessel from "@/assets/onyx-candle-vessel.jpg";
+import verdeTrinketBowl from "@/assets/verde-trinket-bowl.jpg";
+import rossoSoapDish from "@/assets/rosso-soap-dish.jpg";
+import onyxGreenTray from "@/assets/onyx-green-round-tray.jpg";
+import marbleRingDishes from "@/assets/marble-ring-dishes-pair.jpg";
+import blueOnyxTray from "@/assets/blue-onyx-round-tray.jpg";
 
 export type Piece = {
   slug: string;
@@ -59,17 +59,17 @@ export const categories = [
   {
     title: "Furniture",
     blurb: "Refined furniture defined by marble, travertine and solid wood.",
-    image: nestingTablesAngle.url,
+    image: nestingTablesAngle,
   },
   {
     title: "Basins",
     blurb: "Hand-carved stone basins for quiet, sculptural bathrooms.",
-    image: rossoBasin.url,
+    image: rossoBasin,
   },
   {
     title: "Décor",
     blurb: "Small objects that give a room its weight and stillness.",
-    image: greenTray.url,
+    image: greenTray,
   },
 ] as const;
 
@@ -79,7 +79,7 @@ export const pieces: Piece[] = [
     name: "Travertine Block Coffee Table",
     material: "Cream travertine",
     category: "Furniture",
-    image: travertineCubes.url,
+    image: travertineCubes,
     size: "120 × 70 × 34 cm",
     weight: "Approx. 145 kg",
     finish: "Honed, unfilled",
@@ -94,7 +94,7 @@ export const pieces: Piece[] = [
     name: "Travertine Nesting Tables",
     material: "Cream travertine",
     category: "Furniture",
-    image: nestingTables.url,
+    image: nestingTables,
     size: "Set of two — 90 × 45 × 32 cm and 70 × 40 × 26 cm",
     weight: "Approx. 95 kg the pair",
     finish: "Honed, unfilled",
@@ -109,7 +109,7 @@ export const pieces: Piece[] = [
     name: "Travertine Stepped Nesting Tables",
     material: "Noce travertine",
     category: "Furniture",
-    image: travertineSteppedNesting.url,
+    image: travertineSteppedNesting,
     size: "Set of three — 100, 85 and 70 cm wide",
     weight: "Approx. 130 kg the set",
     finish: "Honed, unfilled",
@@ -124,7 +124,7 @@ export const pieces: Piece[] = [
     name: "Travertine Nesting Table — Edge Detail",
     material: "Noce travertine",
     category: "Furniture",
-    image: travertineNestingEdge.url,
+    image: travertineNestingEdge,
     size: "40 mm slab, mitred corner",
     weight: "—",
     finish: "Honed, unfilled",
@@ -139,7 +139,7 @@ export const pieces: Piece[] = [
     name: "Travertine Edge Side Table",
     material: "Cream travertine",
     category: "Furniture",
-    image: travertineDetail.url,
+    image: travertineDetail,
     size: "45 Ø × 52 cm",
     weight: "Approx. 48 kg",
     finish: "Honed",
@@ -154,7 +154,7 @@ export const pieces: Piece[] = [
     name: "Travertine Nesting Set — Angled View",
     material: "Silver travertine",
     category: "Furniture",
-    image: nestingTablesAngle.url,
+    image: nestingTablesAngle,
     size: "Set of two — 90 and 70 cm wide",
     weight: "Approx. 95 kg the pair",
     finish: "Brushed",
@@ -169,7 +169,7 @@ export const pieces: Piece[] = [
     name: "Rosso Levanto Round Basin",
     material: "Rosso Levanto marble",
     category: "Basins",
-    image: rossoBasin.url,
+    image: rossoBasin,
     size: "42 Ø × 15 cm, 40 mm waste",
     weight: "Approx. 32 kg",
     finish: "Polished",
@@ -184,7 +184,7 @@ export const pieces: Piece[] = [
     name: "Rosso Deep Bowl Basin",
     material: "Rosso Levanto marble",
     category: "Basins",
-    image: rossoDeepBowlBasin.url,
+    image: rossoDeepBowlBasin,
     size: "52 × 40 × 17 cm",
     weight: "Approx. 40 kg",
     finish: "Polished",
@@ -199,7 +199,7 @@ export const pieces: Piece[] = [
     name: "Rosso Twin Basin Vanity",
     material: "Rosso Levanto marble",
     category: "Basins",
-    image: rossoBathroom.url,
+    image: rossoBathroom,
     size: "Basins 55 × 38 × 14 cm each",
     weight: "Approx. 38 kg per basin",
     finish: "Polished",
@@ -214,7 +214,7 @@ export const pieces: Piece[] = [
     name: "Verde Marble Round Tray",
     material: "Verde marble",
     category: "Décor",
-    image: greenTray.url,
+    image: greenTray,
     size: "30 Ø × 4 cm",
     weight: "Approx. 6 kg",
     finish: "Honed",
@@ -229,7 +229,7 @@ export const pieces: Piece[] = [
     name: "Verde Tray — Rim Detail",
     material: "Verde marble",
     category: "Décor",
-    image: verdeTrayRim.url,
+    image: verdeTrayRim,
     size: "30 Ø × 4 cm",
     weight: "Approx. 6 kg",
     finish: "Honed",
@@ -244,7 +244,7 @@ export const pieces: Piece[] = [
     name: "Verde Tray — Veining Study",
     material: "Verde marble",
     category: "Décor",
-    image: greenTrayDetail.url,
+    image: greenTrayDetail,
     size: "30 Ø × 4 cm",
     weight: "Approx. 6 kg",
     finish: "Honed",
@@ -259,7 +259,7 @@ export const pieces: Piece[] = [
     name: "Rosso Oval Basin",
     material: "Rosso Levanto marble",
     category: "Basins",
-    image: rossoOvalBasin.url,
+    image: rossoOvalBasin,
     size: "48 × 38 × 15 cm",
     weight: "Approx. 34 kg",
     finish: "Polished",
@@ -274,7 +274,7 @@ export const pieces: Piece[] = [
     name: "Roccia Travertine Basin",
     material: "Classic travertine",
     category: "Basins",
-    image: travertineRoughBasin.url,
+    image: travertineRoughBasin,
     size: "45 Ø × 20 cm",
     weight: "Approx. 55 kg",
     finish: "Split face exterior, honed bowl",
@@ -289,7 +289,7 @@ export const pieces: Piece[] = [
     name: "Roccia Basin — Walnut Suite",
     material: "Travertine and walnut",
     category: "Furniture",
-    image: travertineRoughBath.url,
+    image: travertineRoughBath,
     size: "Vanity 140 × 55 cm, basin 45 Ø",
     weight: "Approx. 120 kg",
     finish: "Split face stone, oiled walnut",
@@ -304,7 +304,7 @@ export const pieces: Piece[] = [
     name: "Calacatta Boat Basin",
     material: "Calacatta Viola marble",
     category: "Basins",
-    image: calacattaBoatBasin.url,
+    image: calacattaBoatBasin,
     size: "60 × 40 × 16 cm",
     weight: "Approx. 42 kg",
     finish: "Polished",
@@ -319,7 +319,7 @@ export const pieces: Piece[] = [
     name: "Verde Round Tray",
     material: "Verde Guatemala marble",
     category: "Décor",
-    image: greenRoundTray.url,
+    image: greenRoundTray,
     size: "32 Ø × 3 cm",
     weight: "Approx. 4 kg",
     finish: "Polished, raised lip",
@@ -334,7 +334,7 @@ export const pieces: Piece[] = [
     name: "Terra Vanity",
     material: "Brown pietra and grey marble",
     category: "Furniture",
-    image: brownMarbleVanity.url,
+    image: brownMarbleVanity,
     size: "160 × 55 × 22 cm top",
     weight: "Approx. 210 kg",
     finish: "Honed",
@@ -349,7 +349,7 @@ export const pieces: Piece[] = [
     name: "Roccia Edge Study",
     material: "Classic travertine",
     category: "Basins",
-    image: travertineRoughDetail.url,
+    image: travertineRoughDetail,
     size: "45 Ø × 20 cm",
     weight: "Approx. 55 kg",
     finish: "Split face",
@@ -364,7 +364,7 @@ export const pieces: Piece[] = [
     name: "Onice Basin",
     material: "White onyx",
     category: "Basins",
-    image: onyxBasinDetail.url,
+    image: onyxBasinDetail,
     size: "40 Ø × 14 cm",
     weight: "Approx. 26 kg",
     finish: "High polish",
@@ -379,7 +379,7 @@ export const pieces: Piece[] = [
     name: "Capsula Basin",
     material: "Beige marble",
     category: "Basins",
-    image: beigeOvalBasin.url,
+    image: beigeOvalBasin,
     size: "58 × 36 × 13 cm",
     weight: "Approx. 36 kg",
     finish: "Honed",
@@ -394,7 +394,7 @@ export const pieces: Piece[] = [
     name: "Calacatta Vein Study",
     material: "Calacatta Viola marble",
     category: "Décor",
-    image: calacattaBasinDetail.url,
+    image: calacattaBasinDetail,
     size: "Detail — sample slab 30 × 20 cm",
     weight: "Approx. 3 kg",
     finish: "Polished",
@@ -409,7 +409,7 @@ export const pieces: Piece[] = [
     name: "Travertine Square Vanity Tray",
     material: "Classic travertine",
     category: "Décor",
-    image: travertineSquareTray.url,
+    image: travertineSquareTray,
     size: "25 × 25 × 3 cm",
     weight: "Approx. 2.6 kg",
     finish: "Honed top, chiselled edge",
@@ -424,7 +424,7 @@ export const pieces: Piece[] = [
     name: "Noir Marble Candle Tray",
     material: "Black marble",
     category: "Décor",
-    image: noirCandleTray.url,
+    image: noirCandleTray,
     size: "16 cm diameter × 3 cm",
     weight: "Approx. 1.4 kg",
     finish: "Polished",
@@ -439,7 +439,7 @@ export const pieces: Piece[] = [
     name: "Marble Arch Desk Clock",
     material: "Carrara, Bianco and Emperador marble",
     category: "Décor",
-    image: marbleArchClocks.url,
+    image: marbleArchClocks,
     size: "14 × 12 × 4 cm",
     weight: "Approx. 1.8 kg",
     finish: "Polished",
@@ -454,7 +454,7 @@ export const pieces: Piece[] = [
     name: "Onyx Candle Vessel",
     material: "Honey onyx",
     category: "Décor",
-    image: onyxCandleVessel.url,
+    image: onyxCandleVessel,
     size: "10 cm diameter × 10 cm",
     weight: "Approx. 1.5 kg",
     finish: "Polished",
@@ -469,7 +469,7 @@ export const pieces: Piece[] = [
     name: "Verde Trinket Bowl",
     material: "Green marble",
     category: "Décor",
-    image: verdeTrinketBowl.url,
+    image: verdeTrinketBowl,
     size: "14 cm diameter × 4 cm",
     weight: "Approx. 1.2 kg",
     finish: "Polished",
@@ -484,7 +484,7 @@ export const pieces: Piece[] = [
     name: "Rosso Soap Dish",
     material: "Rosso Levanto marble",
     category: "Décor",
-    image: rossoSoapDish.url,
+    image: rossoSoapDish,
     size: "12 cm diameter × 3 cm",
     weight: "Approx. 0.9 kg",
     finish: "Polished",
@@ -499,7 +499,7 @@ export const pieces: Piece[] = [
     name: "Onyx Green Round Tray",
     material: "Green onyx",
     category: "Décor",
-    image: onyxGreenTray.url,
+    image: onyxGreenTray,
     size: "18 cm diameter × 4 cm",
     weight: "Approx. 1.7 kg",
     finish: "Polished",
@@ -514,7 +514,7 @@ export const pieces: Piece[] = [
     name: "Marble Ring Dishes (Pair)",
     material: "Mixed onyx and marble",
     category: "Décor",
-    image: marbleRingDishes.url,
+    image: marbleRingDishes,
     size: "11 cm diameter × 3 cm each",
     weight: "Approx. 0.7 kg each",
     finish: "Polished",
@@ -529,7 +529,7 @@ export const pieces: Piece[] = [
     name: "Blue Onyx Round Tray",
     material: "Blue onyx",
     category: "Décor",
-    image: blueOnyxTray.url,
+    image: blueOnyxTray,
     size: "25 cm diameter × 3 cm",
     weight: "Approx. 2.4 kg",
     finish: "Polished",
@@ -547,28 +547,28 @@ export const projects = [
     location: "Karachi",
     scope: "Two bathrooms, kitchen island, entrance console",
     year: "2025",
-    image: rossoBathroom.url,
+    image: rossoBathroom,
   },
   {
     title: "Karachi Villa",
     location: "Karachi",
     scope: "Full stone package — floors, basins, fireplace surround",
     year: "2025",
-    image: nestingTables.url,
+    image: nestingTables,
   },
   {
     title: "Clifton Apartment",
     location: "Karachi",
     scope: "Travertine living room set and dining table",
     year: "2024",
-    image: greenTrayDetail.url,
+    image: greenTrayDetail,
   },
   {
     title: "Boutique Hotel Suites",
     location: "Islamabad",
     scope: "18 hand-carved vessel basins",
     year: "2024",
-    image: rossoBasin.url,
+    image: rossoBasin,
   },
 ];
 
@@ -578,70 +578,70 @@ export const showcase = [
     material: "Beige marble",
     detail: "58 × 36 × 13 cm — honed, matching stone waste cover",
     note: "Set into a grey marble counter with brushed brass wall taps.",
-    image: beigeCapsuleBasin.url,
+    image: beigeCapsuleBasin,
   },
   {
     title: "Wave Vessel Basin",
     material: "Classic travertine",
     detail: "62 × 40 × 18 cm — hand-carved organic rim",
     note: "A single block hollowed by hand, no two rims alike.",
-    image: travertineWaveBasin.url,
+    image: travertineWaveBasin,
   },
   {
     title: "Fluted Calacatta Basin",
     material: "Calacatta marble",
     detail: "55 × 40 × 14 cm — fluted exterior, honed bowl",
     note: "Green and gold veining with a stone plug cut from the same slab.",
-    image: flutedCalacattaBasin.url,
+    image: flutedCalacattaBasin,
   },
   {
     title: "Arco Side Table",
     material: "Brown pietra marble",
     detail: "45 Ø × 52 cm — polished, arched leg",
     note: "A round top on a three-plane base with a cut arch.",
-    image: pietraSideTable.url,
+    image: pietraSideTable,
   },
   {
     title: "Noir Pedestal Table",
     material: "Nero marquina and brass",
     detail: "40 Ø × 55 cm — polished, brass stem",
     note: "Lipped tray top on a domed black marble base.",
-    image: noirPedestalTable.url,
+    image: noirPedestalTable,
   },
   {
     title: "Onyx Shelf Stool",
     material: "Honey onyx",
     detail: "40 × 35 × 48 cm — honed, mitred edges",
     note: "A stool or side table with one open shelf.",
-    image: onyxStoolTable.url,
+    image: onyxStoolTable,
   },
   {
     title: "Luna Round Coffee Table",
     material: "Travertine and walnut",
     detail: "95 Ø × 38 cm — honed top, fluted base",
     note: "A wide travertine disc over a ribbed walnut drum.",
-    image: travertineRoundCoffee.url,
+    image: travertineRoundCoffee,
   },
   {
     title: "Bianco Candle Pair",
     material: "Carrara marble and brass",
     detail: "Heights 16 cm and 21 cm — polished",
     note: "Turned marble bases with slim brass stems for dinner candles.",
-    image: whiteCandleHolders.url,
+    image: whiteCandleHolders,
   },
   {
     title: "Noir Tray Table",
     material: "Nero marquina and blackened oak",
     detail: "50 Ø × 52 cm — polished stone column",
     note: "A dark oak tray top carried on a mitred marble plinth.",
-    image: noirTrayTable.url,
+    image: noirTrayTable,
   },
   {
     title: "Noir Pillar Holders",
     material: "Black marble",
     detail: "Heights 26 cm and 34 cm — polished",
     note: "Stacked cylinder and sphere forms for pillar candles.",
-    image: noirPillarCandles.url,
+    image: noirPillarCandles,
   },
 ];
 

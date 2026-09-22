@@ -1,140 +1,140 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/reveal";
 import { site } from "@/lib/site";
-import hmGreyMarbleTable from "@/assets/hm-grey-marble-table.jpg.asset.json";
-import hmWhiteSideTable from "@/assets/hm-white-side-table.jpg.asset.json";
-import hmGoldWhiteTable from "@/assets/hm-gold-white-table.jpg.asset.json";
-import hmBlackGoldTable from "@/assets/hm-black-gold-table.jpg.asset.json";
-import hmPremiumSlabs from "@/assets/hm-premium-slabs.jpg.asset.json";
-import oceanicMarbleTiles from "@/assets/oceanic-marble-tiles.jpg.asset.json";
-import blackGoldMarbleSlabs from "@/assets/black-gold-marble-slabs.jpg.asset.json";
-import rossoRoundTrayConsole from "@/assets/rosso-round-tray-console.jpg.asset.json";
-import rossoBlockCoffeeTable from "@/assets/rosso-block-coffee-table.jpg.asset.json";
-import greyRoundBasin from "@/assets/grey-round-basin.jpg.asset.json";
-import travertinePedestalSideTable from "@/assets/travertine-pedestal-side-table.jpg.asset.json";
-import onyxCrossSideTable from "@/assets/onyx-cross-side-table.jpg.asset.json";
-import travertineNestingTraySet from "@/assets/travertine-nesting-tray-set.jpg.asset.json";
-import marbledWhitePillarCandles from "@/assets/marbled-white-pillar-candles.jpg.asset.json";
-import noirPedestalTable from "@/assets/noir-pedestal-table.jpg.asset.json";
-import noirTrayTable from "@/assets/noir-tray-table.jpg.asset.json";
-import noirPillarCandles from "@/assets/noir-pillar-candles.jpg.asset.json";
-import whiteCandleHolders from "@/assets/white-candle-holders.jpg.asset.json";
-import pietraSideTable from "@/assets/pietra-side-table.jpg.asset.json";
+import hmGreyMarbleTable from "@/assets/hm-grey-marble-table.jpg";
+import hmWhiteSideTable from "@/assets/hm-white-side-table.jpg";
+import hmGoldWhiteTable from "@/assets/hm-gold-white-table.jpg";
+import hmBlackGoldTable from "@/assets/hm-black-gold-table.jpg";
+import hmPremiumSlabs from "@/assets/hm-premium-slabs.jpg";
+import oceanicMarbleTiles from "@/assets/oceanic-marble-tiles.jpg";
+import blackGoldMarbleSlabs from "@/assets/black-gold-marble-slabs.jpg";
+import rossoRoundTrayConsole from "@/assets/rosso-round-tray-console.jpg";
+import rossoBlockCoffeeTable from "@/assets/rosso-block-coffee-table.jpg";
+import greyRoundBasin from "@/assets/grey-round-basin.jpg";
+import travertinePedestalSideTable from "@/assets/travertine-pedestal-side-table.jpg";
+import onyxCrossSideTable from "@/assets/onyx-cross-side-table.jpg";
+import travertineNestingTraySet from "@/assets/travertine-nesting-tray-set.jpg";
+import marbledWhitePillarCandles from "@/assets/marbled-white-pillar-candles.jpg";
+import noirPedestalTable from "@/assets/noir-pedestal-table.jpg";
+import noirTrayTable from "@/assets/noir-tray-table.jpg";
+import noirPillarCandles from "@/assets/noir-pillar-candles.jpg";
+import whiteCandleHolders from "@/assets/white-candle-holders.jpg";
+import pietraSideTable from "@/assets/pietra-side-table.jpg";
 
 const items = [
   {
     title: "Grey Marble Round Table",
     material: "Grey marble with black steel base",
     note: "Round honed top on a looped column base — showroom piece.",
-    image: hmGreyMarbleTable.url,
+    image: hmGreyMarbleTable,
   },
   {
     title: "Bianco Side Table",
     material: "White marble and black metal",
     note: "Two-tier side table with a glass lower shelf.",
-    image: hmWhiteSideTable.url,
+    image: hmWhiteSideTable,
   },
   {
     title: "Aurea Round Table",
     material: "Statuario marble and polished gold steel",
     note: "Curved gold frame under a bright white top.",
-    image: hmGoldWhiteTable.url,
+    image: hmGoldWhiteTable,
   },
   {
     title: "Nero Gold Table",
     material: "Nero marquina marble and gold steel",
     note: "Deep black top with white veining on a gold arc base.",
-    image: hmBlackGoldTable.url,
+    image: hmBlackGoldTable,
   },
   {
     title: "Premium Marble Collection",
     material: "Assorted slabs",
     note: "Finished panels packed and ready to dispatch.",
-    image: hmPremiumSlabs.url,
+    image: hmPremiumSlabs,
   },
   {
     title: "Oceanic Marble Tiles",
     material: "Oceanic grey marble",
     note: "Pebbled grey tiles cut in matched pairs.",
-    image: oceanicMarbleTiles.url,
+    image: oceanicMarbleTiles,
   },
   {
     title: "Black and Gold Marble Slabs",
     material: "Black and gold marble",
     note: "Full slabs crated at the yard before finishing.",
-    image: blackGoldMarbleSlabs.url,
+    image: blackGoldMarbleSlabs,
   },
   {
     title: "Rosso Round Tray",
     material: "Rosso Levanto marble",
     note: "A turned tray on a cream marble console.",
-    image: rossoRoundTrayConsole.url,
+    image: rossoRoundTrayConsole,
   },
   {
     title: "Rosso Block Coffee Table",
     material: "Rosso Levanto marble",
     note: "A solid mitred block in a low-lit living room.",
-    image: rossoBlockCoffeeTable.url,
+    image: rossoBlockCoffeeTable,
   },
   {
     title: "Grey Round Basin",
     material: "Grey marble",
     note: "Thick-walled vessel basin with a matching stone waste.",
-    image: greyRoundBasin.url,
+    image: greyRoundBasin,
   },
   {
     title: "Travertine Pedestal Side Table",
     material: "Natural travertine with brass stem",
     note: "Round travertine top on a slim brass stem and cylinder base.",
-    image: travertinePedestalSideTable.url,
+    image: travertinePedestalSideTable,
   },
   {
     title: "Onyx Cross Side Table",
     material: "Banded onyx",
     note: "Round top resting on two crossed onyx legs, carved from solid stone.",
-    image: onyxCrossSideTable.url,
+    image: onyxCrossSideTable,
   },
   {
     title: "Travertine Nesting Tray Set",
     material: "Natural travertine",
     note: "Three stepped trays that nest together for vanity or console styling.",
-    image: travertineNestingTraySet.url,
+    image: travertineNestingTraySet,
   },
   {
     title: "Marbled White Pillar Candle Holders",
     material: "White and grey marble",
     note: "Stacked cylinder and sphere pillars, sold as a pair.",
-    image: marbledWhitePillarCandles.url,
+    image: marbledWhitePillarCandles,
   },
   {
     title: "Noir Pedestal Table",
     material: "Nero marquina marble with brass stem",
     note: "Round tray top on a brass stem and domed black marble base.",
-    image: noirPedestalTable.url,
+    image: noirPedestalTable,
   },
   {
     title: "Noir Tray Table",
     material: "Black marble",
     note: "Rimmed round top on a squared black marble column.",
-    image: noirTrayTable.url,
+    image: noirTrayTable,
   },
   {
     title: "Noir Pillar Candle Holders",
     material: "Black marble",
     note: "Sculpted black pillars in two heights, sold as a pair.",
-    image: noirPillarCandles.url,
+    image: noirPillarCandles,
   },
   {
     title: "Bianco Candle Holders",
     material: "White marble with brass",
     note: "Solid white marble bases with slim brass taper holders.",
-    image: whiteCandleHolders.url,
+    image: whiteCandleHolders,
   },
   {
     title: "Pietra Side Table",
     material: "Light stone",
     note: "Soft-edged side table for beside a chair or bed.",
-    image: pietraSideTable.url,
+    image: pietraSideTable,
   },
 ];
 

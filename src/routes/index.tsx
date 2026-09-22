@@ -1,44 +1,44 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroAsset from "@/assets/travertine-detail.jpg.asset.json";
+import heroAsset from "@/assets/travertine-detail.jpg";
 import craft from "@/assets/craft.jpg";
 import { whatsappLink } from "@/lib/site";
 import { categories, pieces, reviews, showcase } from "@/data/catalogue";
 import { Reveal } from "@/components/reveal";
-import waveVessel from "@/assets/travertine-wave-vessel-grey.jpg.asset.json";
-import flutedPlinth from "@/assets/fluted-marble-basin-plinth.jpg.asset.json";
-import hmBlackGoldTable from "@/assets/hm-black-gold-table.jpg.asset.json";
-import hmPremiumSlabs from "@/assets/hm-premium-slabs.jpg.asset.json";
-import noirPillars from "@/assets/noir-pillar-candles.jpg.asset.json";
-import whitePillars from "@/assets/marbled-white-pillar-candles.jpg.asset.json";
-import travertineSquareTray from "@/assets/travertine-square-vanity-tray.jpg.asset.json";
-import noirCandleTray from "@/assets/noir-marble-candle-tray.jpg.asset.json";
-import marbleArchClocks from "@/assets/marble-arch-clocks.jpg.asset.json";
-import onyxCandleVessel from "@/assets/onyx-candle-vessel.jpg.asset.json";
-import verdeTrinketBowl from "@/assets/verde-trinket-bowl.jpg.asset.json";
-import rossoSoapDish from "@/assets/rosso-soap-dish.jpg.asset.json";
-import onyxGreenTray from "@/assets/onyx-green-round-tray.jpg.asset.json";
-import marbleRingDishes from "@/assets/marble-ring-dishes-pair.jpg.asset.json";
-import blueOnyxTray from "@/assets/blue-onyx-round-tray.jpg.asset.json";
+import waveVessel from "@/assets/travertine-wave-vessel-grey.jpg";
+import flutedPlinth from "@/assets/fluted-marble-basin-plinth.jpg";
+import hmBlackGoldTable from "@/assets/hm-black-gold-table.jpg";
+import hmPremiumSlabs from "@/assets/hm-premium-slabs.jpg";
+import noirPillars from "@/assets/noir-pillar-candles.jpg";
+import whitePillars from "@/assets/marbled-white-pillar-candles.jpg";
+import travertineSquareTray from "@/assets/travertine-square-vanity-tray.jpg";
+import noirCandleTray from "@/assets/noir-marble-candle-tray.jpg";
+import marbleArchClocks from "@/assets/marble-arch-clocks.jpg";
+import onyxCandleVessel from "@/assets/onyx-candle-vessel.jpg";
+import verdeTrinketBowl from "@/assets/verde-trinket-bowl.jpg";
+import rossoSoapDish from "@/assets/rosso-soap-dish.jpg";
+import onyxGreenTray from "@/assets/onyx-green-round-tray.jpg";
+import marbleRingDishes from "@/assets/marble-ring-dishes-pair.jpg";
+import blueOnyxTray from "@/assets/blue-onyx-round-tray.jpg";
 
 const objects = [
-  { slug: "travertine-square-vanity-tray", image: travertineSquareTray.url, title: "Travertine Square Vanity Tray", material: "Classic travertine" },
-  { slug: "blue-onyx-round-tray", image: blueOnyxTray.url, title: "Blue Onyx Round Tray", material: "Blue onyx" },
-  { slug: "onyx-candle-vessel", image: onyxCandleVessel.url, title: "Onyx Candle Vessel", material: "Honey onyx" },
-  { slug: "marble-arch-clock", image: marbleArchClocks.url, title: "Marble Arch Desk Clock", material: "Carrara & Emperador" },
-  { slug: "noir-marble-candle-tray", image: noirCandleTray.url, title: "Noir Marble Candle Tray", material: "Black marble" },
-  { slug: "verde-trinket-bowl", image: verdeTrinketBowl.url, title: "Verde Trinket Bowl", material: "Green marble" },
-  { slug: "rosso-soap-dish", image: rossoSoapDish.url, title: "Rosso Soap Dish", material: "Rosso Levanto marble" },
-  { slug: "onyx-green-round-tray", image: onyxGreenTray.url, title: "Onyx Green Round Tray", material: "Green onyx" },
-  { slug: "marble-ring-dishes", image: marbleRingDishes.url, title: "Marble Ring Dishes", material: "Mixed onyx & marble" },
+  { slug: "travertine-square-vanity-tray", image: travertineSquareTray, title: "Travertine Square Vanity Tray", material: "Classic travertine" },
+  { slug: "blue-onyx-round-tray", image: blueOnyxTray, title: "Blue Onyx Round Tray", material: "Blue onyx" },
+  { slug: "onyx-candle-vessel", image: onyxCandleVessel, title: "Onyx Candle Vessel", material: "Honey onyx" },
+  { slug: "marble-arch-clock", image: marbleArchClocks, title: "Marble Arch Desk Clock", material: "Carrara & Emperador" },
+  { slug: "noir-marble-candle-tray", image: noirCandleTray, title: "Noir Marble Candle Tray", material: "Black marble" },
+  { slug: "verde-trinket-bowl", image: verdeTrinketBowl, title: "Verde Trinket Bowl", material: "Green marble" },
+  { slug: "rosso-soap-dish", image: rossoSoapDish, title: "Rosso Soap Dish", material: "Rosso Levanto marble" },
+  { slug: "onyx-green-round-tray", image: onyxGreenTray, title: "Onyx Green Round Tray", material: "Green onyx" },
+  { slug: "marble-ring-dishes", image: marbleRingDishes, title: "Marble Ring Dishes", material: "Mixed onyx & marble" },
 ];
 
 const gallery = [
-  { image: waveVessel.url, title: "Wave Vessel Basin", material: "Classic travertine" },
-  { image: flutedPlinth.url, title: "Fluted Calacatta Basin", material: "Calacatta marble" },
-  { image: hmBlackGoldTable.url, title: "Noir & Gold Side Table", material: "Black gold marble" },
-  { image: hmPremiumSlabs.url, title: "Premium Slab Selection", material: "Black gold marble" },
-  { image: noirPillars.url, title: "Noir Pillar Holders", material: "Black marble" },
-  { image: whitePillars.url, title: "Bianco Pillar Holders", material: "Marbled white stone" },
+  { image: waveVessel, title: "Wave Vessel Basin", material: "Classic travertine" },
+  { image: flutedPlinth, title: "Fluted Calacatta Basin", material: "Calacatta marble" },
+  { image: hmBlackGoldTable, title: "Noir & Gold Side Table", material: "Black gold marble" },
+  { image: hmPremiumSlabs, title: "Premium Slab Selection", material: "Black gold marble" },
+  { image: noirPillars, title: "Noir Pillar Holders", material: "Black marble" },
+  { image: whitePillars, title: "Bianco Pillar Holders", material: "Marbled white stone" },
 ];
 
 export const Route = createFileRoute("/")({
@@ -67,7 +67,7 @@ function Home() {
         <div className="animate-fade-in grid items-center gap-8 md:grid-cols-2 md:gap-14">
           <div className="overflow-hidden bg-secondary">
             <img
-              src={heroAsset.url}
+              src={heroAsset}
               alt="Close-up of a travertine table edge"
               width={1200}
               height={1500}
