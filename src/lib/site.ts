@@ -6,7 +6,7 @@ export const site = {
   email: "Houseofmarble786@gmail.com",
   emailAlt: "Houseofmarble92@gmail.com",
   instagram: "https://www.instagram.com/house_ofmarble",
-  facebook: "#", // TODO: replace with your real Facebook page URL
+  facebook: "https://www.facebook.com/share/1AghyW9wy8/", // TODO: replace with your real Facebook page URL
   address: "Plot # VE-226, St-01, Sec-16, Aman Chowk, Khairabad, Orangi Town, Karachi",
 };
 
